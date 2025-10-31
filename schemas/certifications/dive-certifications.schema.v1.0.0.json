@@ -1,0 +1,140 @@
+{
+  "$id": "https://open.skuba.app/schemas/certifications/dive-certifications.schema.v1.0.0.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Universal Dive Certifications Schema",
+  "description": "Defines the structure for representing scuba diving certifications across all agencies, including recreational, technical, cave, rescue, and professional levels.",
+  "type": "object",
+
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Reference to this schema URL."
+    },
+
+    "meta": {
+      "type": "object",
+      "description": "Metadata about this dataset version.",
+      "properties": {
+        "version": {
+          "type": "string",
+          "description": "Semantic version or date-based tag for this dataset (e.g., '2025.10')."
+        },
+        "generated_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO timestamp when the dataset was last generated."
+        }
+      },
+      "required": ["version", "generated_at"]
+    },
+
+    "certifications": {
+      "type": "array",
+      "description": "List of all certifications defined in this dataset.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^cert-[a-z0-9\\-]+$",
+            "description": "Unique ID for this certification. Must start with 'cert-'. Example: 'cert-padi-ow'."
+          },
+          "agency_id": {
+            "type": "string",
+            "pattern": "^agency-[a-z0-9\\-]+$",
+            "description": "ID of the issuing agency. Must start with 'agency-'. Example: 'agency-padi'."
+          },
+          "name": {
+            "type": "string",
+            "description": "Official name of the certification."
+          },
+          "abbr": {
+            "type": "string",
+            "description": "Common abbreviation used in the diving community (e.g., 'OW', 'AOW', 'RD', 'AN/DP')."
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "recreational",
+              "technical",
+              "cave",
+              "rescue",
+              "professional",
+              "freediving",
+              "rebreather",
+              "specialty",
+              "other"
+            ],
+            "description": "High-level category for grouping certifications."
+          },
+          "status": {
+            "type": "string",
+            "enum": ["active", "deprecated", "renamed", "merged"],
+            "description": "Current status of this certification."
+          },
+          "succeeded_by": {
+            "type": ["string", "null"],
+            "pattern": "^cert-[a-z0-9\\-]+$",
+            "description": "If this certification was replaced, the ID of the successor (must start with 'cert-')."
+          },
+          "historical_names": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Previous or alternate names used historically for this certification."
+          },
+          "prerequisites": {
+            "type": "object",
+            "description": "Required prior certifications and general requirements.",
+            "properties": {
+              "certifications": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^cert-[a-z0-9\\-]+$"
+                },
+                "description": "List of required certification IDs (must start with 'cert-')."
+              },
+              "general": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "General prerequisites like age, experience, medical clearance, etc."
+              }
+            }
+          },
+          "equivalent_to": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Free-form list of certifications from other agencies considered equivalent. Items starting with 'cert-' or 'agency-' are treated as references."
+          },
+          "limits": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Free-form statements describing the limits of this certification (e.g., 'Max 40m', '1 deco tank', 'No overhead environment')."
+          },
+          "notes": {
+            "type": "string",
+            "description": "Optional additional notes or clarifications."
+          },
+          "links": {
+            "type": "array",
+            "items": { "type": "string", "format": "uri" },
+            "description": "List of URLs to official or reference sources for this certification."
+          },
+          "region": {
+            "type": "string",
+            "description": "Optional geographic or organizational region (if agency-specific)."
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp when this certification entry was last updated."
+          }
+        },
+        "required": ["id", "agency_id", "name", "category", "status"]
+      }
+    }
+  },
+
+  "required": ["meta", "certifications"],
+  "additionalProperties": false
+}
