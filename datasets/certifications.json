@@ -1,0 +1,3774 @@
+{
+  "$schema": "https://open.skuba.app/schemas/certifications/dive-certifications.schema.v1.0.0.json",
+  "meta": {
+    "version": "2025.10.31.1",
+    "generated_at": "2025-10-31T12:00:00Z"
+  },
+  "certifications": [
+    {
+      "id": "cert-padi-scuba-diver",
+      "agency": "agency-padi",
+      "name": "Scuba Diver",
+      "abbr": "SD",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": [
+          "Minimum age 10 years",
+          "Medical clearance as required",
+          "Basic swimming ability"
+        ]
+      },
+      "equivalent_to": ["cert-ssi-scuba-diver", "cert-sdi-scuba-diver"],
+      "limits": [
+        "Training-level certification",
+        "Must dive under direct supervision of a professional",
+        "Maximum depth 12 m (40 ft)",
+        "No decompression dives",
+        "No overhead environment"
+      ],
+      "notes": "Entry-level subset of Open Water; upgrade path to OWD.",
+      "links": ["https://www.padi.com/courses/scuba-diver"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-owd",
+      "agency": "agency-padi",
+      "name": "Open Water Diver",
+      "abbr": "OWD",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": ["Open Water"],
+      "prerequisites": {
+        "certifications": [],
+        "general": [
+          "Minimum age 10 years (or 15 for full certification)",
+          "Basic swimming ability",
+          "Medical clearance as required"
+        ]
+      },
+      "equivalent_to": [
+        "cert-ssi-open-water-diver",
+        "cert-sdi-open-water-scuba-diver",
+        "cert-naui-scuba-diver",
+        "cert-bsac-ocean-diver",
+        "cert-cmas-one-star-diver"
+      ],
+      "limits": [
+        "Recommended max depth 18 m (60 ft)",
+        "No decompression dives",
+        "No overhead environment"
+      ],
+      "notes": "Core entry-level certification for autonomous recreational diving within limits.",
+      "links": ["https://www.padi.com/courses/open-water-diver"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-aowd",
+      "agency": "agency-padi",
+      "name": "Advanced Open Water Diver",
+      "abbr": "AOWD",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": ["Advanced Open Water"],
+      "prerequisites": {
+        "certifications": ["cert-padi-owd"],
+        "general": ["Minimum age 12 years"]
+      },
+      "equivalent_to": [
+        "cert-ssi-advanced-adventurer",
+        "cert-sdi-advanced-adventure-diver",
+        "cert-naui-advanced-scuba-diver",
+        "cert-bsac-sports-diver",
+        "cert-cmas-two-star-diver"
+      ],
+      "limits": [
+        "Recommended max depth 30 m (100 ft) for adults, 21 m (70 ft) for 12-14 years",
+        "No decompression dives",
+        "No overhead environment"
+      ],
+      "notes": "Depth adventure dive typically extends training to 30 m.",
+      "links": ["https://www.padi.com/courses/advanced-open-water-diver"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-rescue-diver",
+      "agency": "agency-padi",
+      "name": "Rescue Diver",
+      "abbr": "RD",
+      "category": "rescue",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-aowd"],
+        "general": [
+          "Minimum age 12 years",
+          "Current CPR/First Aid certification (e.g., EFR Primary and Secondary Care)"
+        ]
+      },
+      "equivalent_to": [
+        "cert-ssi-diver-stress-and-rescue",
+        "cert-sdi-rescue-diver",
+        "cert-naui-rescue-diver",
+        "cert-bsac-dive-leader"
+      ],
+      "limits": [
+        "Not a depth rating",
+        "Focus on problem prevention and management"
+      ],
+      "notes": "Required for many leadership tracks and 'Master' recognition ratings.",
+      "links": ["https://www.padi.com/courses/rescue-diver"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-master-scuba-diver",
+      "agency": "agency-padi",
+      "name": "Master Scuba Diver",
+      "abbr": "MSD",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-rescue-diver"],
+        "general": [
+          "Five PADI Specialty Diver certifications",
+          "Minimum 50 logged dives"
+        ]
+      },
+      "equivalent_to": [
+        "cert-sdi-master-scuba-diver",
+        "cert-naui-master-scuba-diver"
+      ],
+      "limits": ["Recognition rating; no new depth privileges by itself"],
+      "notes": "Non-professional recognition of experience and training breadth.",
+      "links": ["https://www.padi.com/master-scuba-diver"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-padi-enriched-air-diver",
+      "agency": "agency-padi",
+      "name": "Enriched Air (Nitrox) Diver",
+      "abbr": "EAN",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": ["Enriched Air Nitrox 32/40"],
+      "prerequisites": {
+        "certifications": ["cert-padi-owd"],
+        "general": ["Minimum age 12 years"]
+      },
+      "equivalent_to": [
+        "cert-ssi-enriched-air-nitrox-40",
+        "cert-sdi-computer-nitrox",
+        "cert-naui-nitrox-diver",
+        "cert-tdi-nitrox-diver",
+        "cert-iantd-nitrox-diver",
+        "cert-raid-nitrox"
+      ],
+      "limits": [
+        "Use of nitrox mixes within agency limits (commonly up to 40% O2)",
+        "Plan PPO2 ≤ agency recommended values",
+        "No decompression dives unless otherwise qualified"
+      ],
+      "notes": "Most common specialty for extending NDLs at modest depths.",
+      "links": ["https://www.padi.com/courses/enriched-air-diver"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-deep-diver",
+      "agency": "agency-padi",
+      "name": "Deep Diver",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-aowd"],
+        "general": ["Minimum age 15 years"]
+      },
+      "equivalent_to": [
+        "cert-ssi-deep-diving",
+        "cert-sdi-deep-diver",
+        "cert-naui-deep-diver"
+      ],
+      "limits": [
+        "Training to dive to 40 m (130 ft) within recreational limits",
+        "No staged decompression"
+      ],
+      "notes": "Extends recreational depth training to the 40 m recreational limit.",
+      "links": ["https://www.padi.com/courses/deep-diver"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-padi-tec-40",
+      "agency": "agency-padi",
+      "name": "Tec 40",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [
+          "cert-padi-aowd",
+          "cert-padi-enriched-air-diver",
+          "cert-padi-deep-diver"
+        ],
+        "general": [
+          "Minimum age 18 years",
+          "Minimum 30 logged dives",
+          "Recent diving activity"
+        ]
+      },
+      "equivalent_to": [
+        "cert-tdi-advanced-nitrox",
+        "cert-tdi-decompression-procedures",
+        "cert-sdi-extended-range-nitrox"
+      ],
+      "limits": [
+        "Intro technical level",
+        "Limited decompression within training standards",
+        "One decompression gas (common: up to 50% O2)"
+      ],
+      "notes": "Bridge from recreational to technical; equipment and procedures training.",
+      "links": ["https://www.padi.com/courses/tec-40"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-tec-45",
+      "agency": "agency-padi",
+      "name": "Tec 45",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-tec-40"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-tdi-decompression-procedures",
+        "cert-raid-deco-40"
+      ],
+      "limits": [
+        "Extended decompression",
+        "Use of a single high-O2 decompression gas (often up to 100% O2)",
+        "Complex dive planning and emergency procedures"
+      ],
+      "notes": "Builds on Tec 40 with deeper/longer exposures and higher O2 for deco.",
+      "links": ["https://www.padi.com/courses/tec-45"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-tec-50",
+      "agency": "agency-padi",
+      "name": "Tec 50",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-tec-45"],
+        "general": []
+      },
+      "equivalent_to": ["cert-tdi-extended-range"],
+      "limits": [
+        "Use of two decompression gases",
+        "Deeper/longer staged decompression dives per standards"
+      ],
+      "notes": "Completes the core 'tec deep' open circuit sequence before trimix.",
+      "links": ["https://www.padi.com/courses/tec-50"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-tec-trimix-65",
+      "agency": "agency-padi",
+      "name": "Tec Trimix 65",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-tec-50"],
+        "general": []
+      },
+      "equivalent_to": ["cert-tdi-trimix-diver"],
+      "limits": [
+        "Trimix for dives up to ~65 m (210 ft)",
+        "Helium-based mixes",
+        "Multiple deco gases"
+      ],
+      "notes": "Introduces normoxic trimix for deeper OC dives.",
+      "links": ["https://www.padi.com/courses/tec-trimix-65"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-tec-trimix-diver",
+      "agency": "agency-padi",
+      "name": "Tec Trimix Diver",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-tec-trimix-65"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-tdi-advanced-trimix-diver",
+        "cert-iantd-advanced-trimix-diver",
+        "cert-gue-tech-2"
+      ],
+      "limits": [
+        "Full trimix training for very deep dives (commonly cited up to ~90 m/300 ft)",
+        "Multiple decompression gases",
+        "Complex staged decompression"
+      ],
+      "notes": "Full normoxic/hypoxic trimix capabilities per standards.",
+      "links": ["https://www.padi.com/courses/tec-trimix-diver"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-padi-tec-40-ccr",
+      "agency": "agency-padi",
+      "name": "Tec 40 CCR Diver",
+      "category": "rebreather",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-aowd", "cert-padi-enriched-air-diver"],
+        "general": [
+          "Minimum age 18 years",
+          "Unit-specific prerequisites",
+          "Manufacturer unit-specific training requirements"
+        ]
+      },
+      "equivalent_to": ["cert-tdi-ccr-air-diluent-diver", "cert-raid-ccr-40"],
+      "limits": [
+        "CCR air or nitrox diluent within training depth",
+        "Unit-specific configuration and bailout procedures"
+      ],
+      "notes": "Entry-level closed-circuit rebreather certification on specific units.",
+      "links": ["https://www.padi.com/courses/tec-40-ccr"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-tec-60-ccr",
+      "agency": "agency-padi",
+      "name": "Tec 60 CCR Diver",
+      "category": "rebreather",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-tec-40-ccr"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-tdi-ccr-advanced-mixed-gas-diver",
+        "cert-raid-ccr-60"
+      ],
+      "limits": [
+        "Deeper CCR dives with staged decompression",
+        "Helitrox/mixed gas per standards"
+      ],
+      "notes": "Builds on CCR basics for deeper/longer exposures.",
+      "links": ["https://www.padi.com/courses/tec-60-ccr"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-tec-100-ccr",
+      "agency": "agency-padi",
+      "name": "Tec 100 CCR Diver",
+      "category": "rebreather",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-tec-60-ccr"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-tdi-ccr-advanced-mixed-gas-diver",
+        "cert-iantd-ccr-advanced-mixed-gas"
+      ],
+      "limits": [
+        "Advanced mixed-gas CCR dives with significant decompression obligations",
+        "Unit-specific bailout and planning standards"
+      ],
+      "notes": "Highest level CCR training in the TecRec progression.",
+      "links": ["https://www.padi.com/courses/tec-100-ccr"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-padi-divemaster",
+      "agency": "agency-padi",
+      "name": "Divemaster",
+      "abbr": "DM",
+      "category": "professional",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-rescue-diver"],
+        "general": [
+          "Minimum age 18 years",
+          "Minimum 40 logged dives to start, 60 to certify",
+          "Current EFR Primary and Secondary Care or equivalent",
+          "Medical clearance within 12 months"
+        ]
+      },
+      "equivalent_to": [
+        "cert-ssi-dive-guide",
+        "cert-sdi-divemaster",
+        "cert-naui-divemaster"
+      ],
+      "limits": [
+        "May supervise certified divers",
+        "May assist with training",
+        "May not conduct courses independently"
+      ],
+      "notes": "First professional-level rating in PADI system.",
+      "links": ["https://www.padi.com/courses/divemaster"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-wreck-diver",
+      "agency": "agency-padi",
+      "name": "Wreck Diver",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-aowd"],
+        "general": ["Minimum age 15 years"]
+      },
+      "equivalent_to": [
+        "cert-ssi-wreck-diving",
+        "cert-sdi-wreck-diver",
+        "cert-naui-wreck-diver"
+      ],
+      "limits": [
+        "External wreck exploration",
+        "Limited penetration within daylight zone"
+      ],
+      "notes": "Covers wreck diving techniques, hazards, and marine archaeology ethics.",
+      "links": ["https://www.padi.com/courses/wreck-diver"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-underwater-navigator",
+      "agency": "agency-padi",
+      "name": "Underwater Navigator",
+      "abbr": "Nav",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-owd"],
+        "general": ["Minimum age 10 years"]
+      },
+      "equivalent_to": [
+        "cert-ssi-navigation",
+        "cert-sdi-underwater-navigation",
+        "cert-naui-navigation"
+      ],
+      "limits": [],
+      "notes": "Natural navigation and compass navigation techniques.",
+      "links": ["https://www.padi.com/courses/underwater-navigator"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-night-diver",
+      "agency": "agency-padi",
+      "name": "Night Diver",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-owd"],
+        "general": ["Minimum age 12 years"]
+      },
+      "equivalent_to": [
+        "cert-ssi-night-limited-visibility",
+        "cert-sdi-night-limited-visibility",
+        "cert-naui-night-diver"
+      ],
+      "limits": [],
+      "notes": "Night diving techniques, light signals, and nocturnal marine life.",
+      "links": ["https://www.padi.com/courses/night-diver"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-drift-diver",
+      "agency": "agency-padi",
+      "name": "Drift Diver",
+      "abbr": "Drift",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-owd"],
+        "general": ["Minimum age 12 years"]
+      },
+      "equivalent_to": [
+        "cert-ssi-waves-tides-currents",
+        "cert-sdi-drift-diver"
+      ],
+      "limits": [],
+      "notes": "Techniques for diving in currents.",
+      "links": ["https://www.padi.com/courses/drift-diver"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-peak-performance-buoyancy",
+      "agency": "agency-padi",
+      "name": "Peak Performance Buoyancy",
+      "abbr": "PPB",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-owd"],
+        "general": ["Minimum age 10 years"]
+      },
+      "equivalent_to": ["cert-ssi-perfect-buoyancy"],
+      "limits": [],
+      "notes": "Fine-tune buoyancy control, trim, and streamlining.",
+      "links": ["https://www.padi.com/courses/peak-performance-buoyancy"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-search-and-recovery",
+      "agency": "agency-padi",
+      "name": "Search and Recovery Diver",
+      "abbr": "S&R",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-aowd"],
+        "general": ["Minimum age 12 years"]
+      },
+      "equivalent_to": ["cert-ssi-search-recovery", "cert-sdi-search-recovery"],
+      "limits": [],
+      "notes": "Search patterns, recovery techniques, and lift bag use.",
+      "links": ["https://www.padi.com/courses/search-and-recovery-diver"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-underwater-photographer",
+      "agency": "agency-padi",
+      "name": "Underwater Photographer",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": ["Digital Underwater Photographer"],
+      "prerequisites": {
+        "certifications": ["cert-padi-owd"],
+        "general": ["Minimum age 10 years"]
+      },
+      "equivalent_to": [
+        "cert-ssi-photo-video",
+        "cert-sdi-underwater-photographer"
+      ],
+      "limits": [],
+      "notes": "Digital underwater photography principles and techniques.",
+      "links": ["https://www.padi.com/courses/underwater-photographer"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-sidemount-diver",
+      "agency": "agency-padi",
+      "name": "Sidemount Diver",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-owd"],
+        "general": ["Minimum age 15 years"]
+      },
+      "equivalent_to": [
+        "cert-ssi-sidemount-diving",
+        "cert-sdi-sidemount-diver",
+        "cert-tdi-sidemount-diver"
+      ],
+      "limits": [],
+      "notes": "Sidemount configuration and techniques for open water.",
+      "links": ["https://www.padi.com/courses/sidemount-diver"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-dry-suit-diver",
+      "agency": "agency-padi",
+      "name": "Dry Suit Diver",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-owd"],
+        "general": ["Minimum age 10 years"]
+      },
+      "equivalent_to": ["cert-ssi-dry-suit-diving", "cert-sdi-dry-suit-diver"],
+      "limits": [],
+      "notes": "Dry suit selection, care, and diving techniques.",
+      "links": ["https://www.padi.com/courses/dry-suit-diver"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-ice-diver",
+      "agency": "agency-padi",
+      "name": "Ice Diver",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-aowd", "cert-padi-dry-suit-diver"],
+        "general": ["Minimum age 18 years"]
+      },
+      "equivalent_to": ["cert-ssi-ice-diving", "cert-sdi-ice-diver"],
+      "limits": [],
+      "notes": "Overhead environment diving under ice with tether and safety procedures.",
+      "links": ["https://www.padi.com/courses/ice-diver"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-altitude-diver",
+      "agency": "agency-padi",
+      "name": "Altitude Diver",
+      "abbr": "Altitude",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-owd"],
+        "general": ["Minimum age 10 years"]
+      },
+      "equivalent_to": ["cert-ssi-altitude-diving"],
+      "limits": [],
+      "notes": "Diving at altitudes above 300 m (1000 ft); special planning required.",
+      "links": ["https://www.padi.com/courses/altitude-diver"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-boat-diver",
+      "agency": "agency-padi",
+      "name": "Boat Diver",
+      "abbr": "Boat",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-owd"],
+        "general": ["Minimum age 10 years"]
+      },
+      "equivalent_to": ["cert-ssi-boat-diving"],
+      "limits": [],
+      "notes": "Boat diving procedures, etiquette, and techniques.",
+      "links": ["https://www.padi.com/courses/boat-diver"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-equipment-specialist",
+      "agency": "agency-padi",
+      "name": "Equipment Specialist",
+      "abbr": "Equipment",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-owd"],
+        "general": ["Minimum age 10 years"]
+      },
+      "equivalent_to": ["cert-ssi-equipment-techniques"],
+      "limits": [],
+      "notes": "Scuba equipment care, maintenance, and minor repairs.",
+      "links": ["https://www.padi.com/courses/equipment-specialist"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-self-reliant-diver",
+      "agency": "agency-padi",
+      "name": "Self-Reliant Diver",
+      "abbr": "Solo",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-padi-aowd"],
+        "general": ["Minimum age 18 years", "Minimum 100 logged dives"]
+      },
+      "equivalent_to": [],
+      "limits": [],
+      "notes": "Solo diving skills and emergency self-sufficiency.",
+      "links": ["https://www.padi.com/courses/self-reliant-diver"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-underwater-videographer",
+      "agency": "agency-padi",
+      "name": "Underwater Videographer",
+      "abbr": "UW Video",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": ["Digital Underwater Videographer"],
+      "prerequisites": {
+        "certifications": ["cert-padi-owd"],
+        "general": ["Minimum age 10 years"]
+      },
+      "equivalent_to": ["cert-ssi-photo-video"],
+      "limits": [],
+      "notes": "Underwater video techniques, editing basics, and storytelling.",
+      "links": ["https://www.padi.com/courses/underwater-videographer"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-padi-emergency-oxygen-provider",
+      "agency": "agency-padi",
+      "name": "Emergency Oxygen Provider",
+      "category": "other",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": []
+      },
+      "equivalent_to": ["cert-dan-oxygen-provider", "cert-ssi-oxygen-provider"],
+      "limits": [],
+      "notes": "Emergency oxygen administration for diving injuries; not a diving certification.",
+      "links": ["https://www.padi.com/courses/emergency-oxygen-provider"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-ssi-scuba-diver",
+      "agency": "agency-ssi",
+      "name": "Scuba Diver",
+      "abbr": "SD",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": [
+          "Minimum age 10 years",
+          "Basic swimming ability",
+          "Medical clearance as required"
+        ]
+      },
+      "equivalent_to": ["cert-padi-scuba-diver", "cert-sdi-scuba-diver"],
+      "limits": [
+        "Training-level certification",
+        "Must dive under direct supervision of a professional",
+        "Maximum depth 12 m (40 ft)",
+        "No decompression dives"
+      ],
+      "notes": "Entry-level subset of Open Water; upgrade path to OWD.",
+      "links": [
+        "https://www.divessi.com/en/certifications/scuba-diving/scuba-diver"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-ssi-open-water-diver",
+      "agency": "agency-ssi",
+      "name": "Open Water Diver",
+      "abbr": "OWD",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": [
+          "Minimum age 10 years",
+          "Basic swimming ability",
+          "Medical clearance as required"
+        ]
+      },
+      "equivalent_to": [
+        "cert-padi-owd",
+        "cert-sdi-open-water-scuba-diver",
+        "cert-naui-scuba-diver",
+        "cert-bsac-ocean-diver",
+        "cert-cmas-one-star-diver"
+      ],
+      "limits": [
+        "Recommended max depth 18 m (60 ft)",
+        "No decompression dives",
+        "No overhead environment"
+      ],
+      "notes": "SSI core entry-level certification.",
+      "links": [
+        "https://www.divessi.com/en/certifications/scuba-diving/open-water-diver-1923"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-ssi-advanced-adventurer",
+      "agency": "agency-ssi",
+      "name": "Advanced Adventurer",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-ssi-open-water-diver"],
+        "general": ["Minimum age 10 years"]
+      },
+      "equivalent_to": [
+        "cert-padi-aowd",
+        "cert-sdi-advanced-adventure-diver",
+        "cert-naui-advanced-scuba-diver",
+        "cert-bsac-sports-diver"
+      ],
+      "limits": [
+        "Recommended max depth 30 m (100 ft) with Deep Adventure dive",
+        "No decompression dives"
+      ],
+      "notes": "SSI's structured sampler leading toward specialties and higher training.",
+      "links": [
+        "https://www.divessi.com/en/certifications/scuba-diving/advanced-adventurer-2012"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-ssi-diver-stress-and-rescue",
+      "agency": "agency-ssi",
+      "name": "Diver Stress & Rescue",
+      "abbr": "Stress & Rescue",
+      "category": "rescue",
+      "status": "active",
+      "historical_names": ["Stress & Rescue"],
+      "prerequisites": {
+        "certifications": ["cert-ssi-advanced-adventurer"],
+        "general": ["Current first aid/CPR/O2 provider"]
+      },
+      "equivalent_to": [
+        "cert-padi-rescue-diver",
+        "cert-sdi-rescue-diver",
+        "cert-naui-rescue-diver"
+      ],
+      "limits": ["Not a depth rating", "Focus on prevention and management"],
+      "notes": "Core rescue-level training; prerequisite for SSI leadership tracks.",
+      "links": [
+        "https://www.divessi.com/en/certifications/scuba-diving/stress-rescue-2004"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-ssi-enriched-air-nitrox-40",
+      "agency": "agency-ssi",
+      "name": "Enriched Air Nitrox 40",
+      "abbr": "EAN40",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": ["EANx 32/40"],
+      "prerequisites": {
+        "certifications": ["cert-ssi-open-water-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-padi-enriched-air-diver",
+        "cert-sdi-computer-nitrox",
+        "cert-naui-nitrox-diver",
+        "cert-tdi-nitrox-diver",
+        "cert-iantd-nitrox-diver"
+      ],
+      "limits": [
+        "Nitrox use up to 40% O2",
+        "Plan PPO2 within agency recommendations",
+        "No decompression unless otherwise qualified"
+      ],
+      "notes": "Core specialty for longer no-stop times.",
+      "links": [
+        "https://www.divessi.com/en/certifications/scuba-diving/enriched-air-nitrox-40-2021"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-ssi-master-diver",
+      "agency": "agency-ssi",
+      "name": "Master Diver",
+      "abbr": "MD",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-ssi-diver-stress-and-rescue"],
+        "general": [
+          "Four SSI Specialty certifications",
+          "Minimum 50 logged dives"
+        ]
+      },
+      "equivalent_to": [
+        "cert-padi-master-scuba-diver",
+        "cert-sdi-master-scuba-diver",
+        "cert-naui-master-scuba-diver"
+      ],
+      "limits": ["Recognition rating; no additional depth privileges"],
+      "notes": "SSI's highest non-professional recognition level.",
+      "links": [
+        "https://www.divessi.com/en/certifications/scuba-diving/master-diver"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-ssi-dive-guide",
+      "agency": "agency-ssi",
+      "name": "Dive Guide",
+      "category": "professional",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-ssi-diver-stress-and-rescue"],
+        "general": [
+          "Minimum age 18 years",
+          "Minimum 40 logged dives",
+          "Science of Diving or equivalent"
+        ]
+      },
+      "equivalent_to": ["cert-padi-divemaster", "cert-sdi-divemaster"],
+      "limits": ["May guide certified divers", "May assist instructors"],
+      "notes": "SSI professional-level certification.",
+      "links": [
+        "https://www.divessi.com/en/certifications/scuba-diving/dive-guide"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-ssi-deep-diving",
+      "agency": "agency-ssi",
+      "name": "Deep Diving",
+      "abbr": "Deep",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-ssi-open-water-diver"],
+        "general": ["Minimum age 15 years"]
+      },
+      "equivalent_to": ["cert-padi-deep-diver", "cert-sdi-deep-diver"],
+      "limits": [],
+      "notes": "Training to 40 m (130 ft) within recreational limits.",
+      "links": [
+        "https://www.divessi.com/en/certifications/scuba-diving/deep-diving"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-ssi-wreck-diving",
+      "agency": "agency-ssi",
+      "name": "Wreck Diving",
+      "abbr": "Wreck",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-ssi-open-water-diver"],
+        "general": []
+      },
+      "equivalent_to": ["cert-padi-wreck-diver", "cert-sdi-wreck-diver"],
+      "limits": [],
+      "notes": "External wreck exploration and limited penetration.",
+      "links": [
+        "https://www.divessi.com/en/certifications/scuba-diving/wreck-diving"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-ssi-night-limited-visibility",
+      "agency": "agency-ssi",
+      "name": "Night & Limited Visibility",
+      "abbr": "Night",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-ssi-open-water-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-padi-night-diver",
+        "cert-sdi-night-limited-visibility"
+      ],
+      "limits": [],
+      "notes": "Night diving and low visibility techniques.",
+      "links": [
+        "https://www.divessi.com/en/certifications/scuba-diving/night-limited-visibility"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-ssi-navigation",
+      "agency": "agency-ssi",
+      "name": "Navigation",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-ssi-open-water-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-padi-underwater-navigator",
+        "cert-sdi-underwater-navigation"
+      ],
+      "limits": [],
+      "notes": "Compass and natural navigation techniques.",
+      "links": [
+        "https://www.divessi.com/en/certifications/scuba-diving/navigation"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-ssi-search-recovery",
+      "agency": "agency-ssi",
+      "name": "Search & Recovery",
+      "abbr": "S&R",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-ssi-open-water-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-padi-search-and-recovery",
+        "cert-sdi-search-recovery"
+      ],
+      "limits": [],
+      "notes": "Search patterns and object recovery techniques.",
+      "links": [
+        "https://www.divessi.com/en/certifications/scuba-diving/search-recovery"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-ssi-sidemount-diving",
+      "agency": "agency-ssi",
+      "name": "Sidemount Diving",
+      "abbr": "Sidemount",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-ssi-open-water-diver"],
+        "general": ["Minimum age 15 years"]
+      },
+      "equivalent_to": [
+        "cert-padi-sidemount-diver",
+        "cert-sdi-sidemount-diver"
+      ],
+      "limits": [],
+      "notes": "Sidemount configuration for open water.",
+      "links": [
+        "https://www.divessi.com/en/certifications/scuba-diving/sidemount-diving"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-ssi-perfect-buoyancy",
+      "agency": "agency-ssi",
+      "name": "Perfect Buoyancy",
+      "abbr": "PPB",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-ssi-open-water-diver"],
+        "general": []
+      },
+      "equivalent_to": ["cert-padi-peak-performance-buoyancy"],
+      "limits": [],
+      "notes": "Advanced buoyancy control and trim techniques.",
+      "links": [
+        "https://www.divessi.com/en/certifications/scuba-diving/perfect-buoyancy"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-ssi-dry-suit-diving",
+      "agency": "agency-ssi",
+      "name": "Dry Suit Diving",
+      "abbr": "Dry Suit",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-ssi-open-water-diver"],
+        "general": []
+      },
+      "equivalent_to": ["cert-padi-dry-suit-diver", "cert-sdi-dry-suit-diver"],
+      "limits": [],
+      "notes": "Dry suit techniques and maintenance.",
+      "links": [
+        "https://www.divessi.com/en/certifications/scuba-diving/dry-suit-diving"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-ssi-photo-video",
+      "agency": "agency-ssi",
+      "name": "Photo & Video",
+      "abbr": "Photo/Video",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-ssi-open-water-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-padi-underwater-photographer",
+        "cert-padi-underwater-videographer"
+      ],
+      "limits": [],
+      "notes": "Underwater photography and videography.",
+      "links": [
+        "https://www.divessi.com/en/certifications/scuba-diving/photo-video"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-ssi-waves-tides-currents",
+      "agency": "agency-ssi",
+      "name": "Waves, Tides & Currents",
+      "abbr": "WTC",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-ssi-open-water-diver"],
+        "general": []
+      },
+      "equivalent_to": ["cert-padi-drift-diver"],
+      "limits": [],
+      "notes": "Understanding and diving in dynamic water conditions.",
+      "links": [
+        "https://www.divessi.com/en/certifications/scuba-diving/waves-tides-currents"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-sdi-scuba-diver",
+      "agency": "agency-sdi",
+      "name": "Scuba Diver",
+      "abbr": "SD",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": [
+          "Minimum age 10 years",
+          "Basic swimming ability",
+          "Medical clearance as required"
+        ]
+      },
+      "equivalent_to": ["cert-padi-scuba-diver", "cert-ssi-scuba-diver"],
+      "limits": [
+        "Training-level certification",
+        "Must dive under direct supervision of a professional",
+        "Maximum depth 12 m (40 ft)",
+        "No decompression dives"
+      ],
+      "notes": "Entry-level subset of Open Water; upgrade path to OWSD.",
+      "links": ["https://www.tdisdi.com/sdi/get-certified/scuba-diver/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-sdi-open-water-scuba-diver",
+      "agency": "agency-sdi",
+      "name": "Open Water Scuba Diver",
+      "abbr": "OWSD",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": ["Open Water Diver"],
+      "prerequisites": {
+        "certifications": [],
+        "general": [
+          "Minimum age 10 years",
+          "Basic swimming ability",
+          "Medical clearance as required"
+        ]
+      },
+      "equivalent_to": [
+        "cert-padi-owd",
+        "cert-ssi-open-water-diver",
+        "cert-naui-scuba-diver",
+        "cert-bsac-ocean-diver",
+        "cert-cmas-one-star-diver"
+      ],
+      "limits": [
+        "Recommended max depth 18 m (60 ft)",
+        "No decompression dives"
+      ],
+      "notes": "Recreational entry-level certification within International Training.",
+      "links": [
+        "https://www.tdisdi.com/sdi/get-certified/open-water-scuba-diver/"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-sdi-advanced-adventure-diver",
+      "agency": "agency-sdi",
+      "name": "Advanced Adventure Diver",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-sdi-open-water-scuba-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-padi-aowd",
+        "cert-ssi-advanced-adventurer",
+        "cert-naui-advanced-scuba-diver"
+      ],
+      "limits": [
+        "Recommended max depth 30 m (100 ft) with deep module",
+        "No decompression dives"
+      ],
+      "notes": "Sample of specialties; stepping stone toward Rescue.",
+      "links": [
+        "https://www.tdisdi.com/sdi/get-certified/advanced-adventure-diver/"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-sdi-rescue-diver",
+      "agency": "agency-sdi",
+      "name": "Rescue Diver",
+      "abbr": "RD",
+      "category": "rescue",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-sdi-advanced-adventure-diver"],
+        "general": ["Current first aid/CPR/O2 provider"]
+      },
+      "equivalent_to": [
+        "cert-padi-rescue-diver",
+        "cert-ssi-diver-stress-and-rescue",
+        "cert-naui-rescue-diver"
+      ],
+      "limits": ["Not a depth rating"],
+      "notes": "Core rescue-level training for SDI path.",
+      "links": ["https://www.tdisdi.com/sdi/get-certified/rescue-diver/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-sdi-master-scuba-diver",
+      "agency": "agency-sdi",
+      "name": "Master Scuba Diver",
+      "abbr": "MSD",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-sdi-rescue-diver"],
+        "general": ["Four SDI specialties", "Minimum 50 logged dives"]
+      },
+      "equivalent_to": [
+        "cert-padi-master-scuba-diver",
+        "cert-naui-master-scuba-diver"
+      ],
+      "limits": ["Recognition; no additional depth privileges"],
+      "notes": "Experience recognition rating.",
+      "links": ["https://www.tdisdi.com/sdi/get-certified/master-scuba-diver/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-sdi-computer-nitrox",
+      "agency": "agency-sdi",
+      "name": "Computer Nitrox",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": ["Nitrox"],
+      "prerequisites": {
+        "certifications": ["cert-sdi-open-water-scuba-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-padi-enriched-air-diver",
+        "cert-ssi-enriched-air-nitrox-40",
+        "cert-naui-nitrox-diver",
+        "cert-tdi-nitrox-diver"
+      ],
+      "limits": [
+        "Nitrox use per training (commonly up to 40% O2)",
+        "Plan PPO2 within agency recommendations"
+      ],
+      "notes": "Nitrox planning and use focused on dive computers.",
+      "links": ["https://www.tdisdi.com/sdi/get-certified/computer-nitrox/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-sdi-divemaster",
+      "agency": "agency-sdi",
+      "name": "Divemaster",
+      "abbr": "DM",
+      "category": "professional",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-sdi-rescue-diver"],
+        "general": [
+          "Minimum age 18 years",
+          "Minimum 40 logged dives",
+          "Current CPR/First Aid"
+        ]
+      },
+      "equivalent_to": ["cert-padi-divemaster", "cert-ssi-dive-guide"],
+      "limits": ["May supervise certified divers", "May assist with training"],
+      "notes": "SDI professional-level certification.",
+      "links": ["https://www.tdisdi.com/sdi/get-certified/divemaster/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-sdi-deep-diver",
+      "agency": "agency-sdi",
+      "name": "Deep Diver",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-sdi-open-water-scuba-diver"],
+        "general": ["Minimum age 15 years"]
+      },
+      "equivalent_to": ["cert-padi-deep-diver", "cert-ssi-deep-diving"],
+      "limits": [],
+      "notes": "Training to 40 m (130 ft) within recreational limits.",
+      "links": ["https://www.tdisdi.com/sdi/get-certified/deep-diver/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-sdi-wreck-diver",
+      "agency": "agency-sdi",
+      "name": "Wreck Diver",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-sdi-open-water-scuba-diver"],
+        "general": []
+      },
+      "equivalent_to": ["cert-padi-wreck-diver", "cert-ssi-wreck-diving"],
+      "limits": [],
+      "notes": "Wreck diving techniques and safety.",
+      "links": ["https://www.tdisdi.com/sdi/get-certified/wreck-diver/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-sdi-night-limited-visibility",
+      "agency": "agency-sdi",
+      "name": "Night & Limited Visibility",
+      "abbr": "Night",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-sdi-open-water-scuba-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-padi-night-diver",
+        "cert-ssi-night-limited-visibility"
+      ],
+      "limits": [],
+      "notes": "Night diving techniques.",
+      "links": [
+        "https://www.tdisdi.com/sdi/get-certified/night-limited-visibility/"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-sdi-underwater-navigation",
+      "agency": "agency-sdi",
+      "name": "Underwater Navigation",
+      "abbr": "Nav",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-sdi-open-water-scuba-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-padi-underwater-navigator",
+        "cert-ssi-navigation"
+      ],
+      "limits": [],
+      "notes": "Navigation techniques.",
+      "links": [
+        "https://www.tdisdi.com/sdi/get-certified/underwater-navigation/"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-sdi-search-recovery",
+      "agency": "agency-sdi",
+      "name": "Search & Recovery",
+      "abbr": "S&R",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-sdi-open-water-scuba-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-padi-search-and-recovery",
+        "cert-ssi-search-recovery"
+      ],
+      "limits": [],
+      "notes": "Search and recovery techniques.",
+      "links": ["https://www.tdisdi.com/sdi/get-certified/search-recovery/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-sdi-sidemount-diver",
+      "agency": "agency-sdi",
+      "name": "Sidemount Diver",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-sdi-open-water-scuba-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-padi-sidemount-diver",
+        "cert-ssi-sidemount-diving"
+      ],
+      "limits": [],
+      "notes": "Sidemount configuration for open water.",
+      "links": ["https://www.tdisdi.com/sdi/get-certified/sidemount-diver/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-sdi-dry-suit-diver",
+      "agency": "agency-sdi",
+      "name": "Dry Suit Diver",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-sdi-open-water-scuba-diver"],
+        "general": []
+      },
+      "equivalent_to": ["cert-padi-dry-suit-diver", "cert-ssi-dry-suit-diving"],
+      "limits": [],
+      "notes": "Dry suit diving techniques.",
+      "links": ["https://www.tdisdi.com/sdi/get-certified/dry-suit-diver/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-sdi-ice-diver",
+      "agency": "agency-sdi",
+      "name": "Ice Diver",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-sdi-dry-suit-diver"],
+        "general": ["Minimum age 18 years"]
+      },
+      "equivalent_to": ["cert-padi-ice-diver", "cert-ssi-ice-diving"],
+      "limits": [],
+      "notes": "Ice diving with overhead environment procedures.",
+      "links": ["https://www.tdisdi.com/sdi/get-certified/ice-diver/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-sdi-underwater-photographer",
+      "agency": "agency-sdi",
+      "name": "Underwater Photographer",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-sdi-open-water-scuba-diver"],
+        "general": []
+      },
+      "equivalent_to": ["cert-padi-underwater-photographer"],
+      "limits": [],
+      "notes": "Underwater photography techniques.",
+      "links": [
+        "https://www.tdisdi.com/sdi/get-certified/underwater-photographer/"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-tdi-intro-to-tech",
+      "agency": "agency-tdi",
+      "name": "Intro to Tech",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-sdi-rescue-diver"],
+        "general": ["Buoyancy and equipment proficiency per standards"]
+      },
+      "equivalent_to": ["cert-raid-intro-to-tech", "cert-iantd-intro-to-tech"],
+      "limits": [
+        "Skills-focused; does not grant decompression privileges by itself"
+      ],
+      "notes": "Foundational skills for technical diving equipment and procedures.",
+      "links": ["https://www.tdisdi.com/tdi/get-certified/intro-to-tech/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-tdi-advanced-nitrox",
+      "agency": "agency-tdi",
+      "name": "Advanced Nitrox Diver",
+      "abbr": "AN",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": [
+          "Minimum age 18 years",
+          "Rescue Diver certification or equivalent",
+          "Nitrox certification",
+          "Experience prerequisites per standards"
+        ]
+      },
+      "equivalent_to": [
+        "cert-padi-tec-40",
+        "cert-raid-deco-40",
+        "cert-iantd-advanced-nitrox-diver"
+      ],
+      "limits": [
+        "Use of EANx > 40% up to pure O2 for accelerated decompression when combined with DP",
+        "No staged decompression unless combined with DP"
+      ],
+      "notes": "Often paired with Decompression Procedures.",
+      "links": [
+        "https://www.tdisdi.com/tdi/get-certified/advanced-nitrox-diver/"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-tdi-decompression-procedures",
+      "agency": "agency-tdi",
+      "name": "Decompression Procedures Diver",
+      "abbr": "DP",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-tdi-advanced-nitrox"],
+        "general": ["Deep training/experience per standards"]
+      },
+      "equivalent_to": ["cert-padi-tec-45", "cert-raid-deco-40"],
+      "limits": [
+        "Staged decompression dives within training limits",
+        "One or more deco gases per standards"
+      ],
+      "notes": "Teaches staged decompression planning and execution. Often combined with Advanced Nitrox as AN/DP.",
+      "links": [
+        "https://www.tdisdi.com/tdi/get-certified/decompression-procedures-diver/"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-tdi-extended-range",
+      "agency": "agency-tdi",
+      "name": "Extended Range Diver",
+      "abbr": "XR",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [
+          "cert-tdi-advanced-nitrox",
+          "cert-tdi-decompression-procedures"
+        ],
+        "general": []
+      },
+      "equivalent_to": ["cert-padi-tec-50"],
+      "limits": [
+        "Air/nitrox to deeper ranges with staged decompression",
+        "Multiple deco gases per standards"
+      ],
+      "notes": "Culmination of AN/DP path prior to trimix.",
+      "links": [
+        "https://www.tdisdi.com/tdi/get-certified/extended-range-diver/"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-tdi-trimix-diver",
+      "agency": "agency-tdi",
+      "name": "Trimix Diver (Normoxic)",
+      "abbr": "TMX",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-tdi-extended-range"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-padi-tec-trimix-65",
+        "cert-raid-trimix-1",
+        "cert-iantd-normoxic-trimix-diver"
+      ],
+      "limits": ["Normoxic trimix within standards", "Multiple deco gases"],
+      "notes": "First level trimix for deeper dives with helium to manage narcosis.",
+      "links": ["https://www.tdisdi.com/tdi/get-certified/trimix-diver/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-tdi-advanced-trimix-diver",
+      "agency": "agency-tdi",
+      "name": "Advanced Trimix Diver",
+      "abbr": "Adv TMX",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-tdi-trimix-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-padi-tec-trimix-diver",
+        "cert-iantd-advanced-trimix-diver",
+        "cert-raid-trimix-2"
+      ],
+      "limits": [
+        "Hypoxic trimix per standards for very deep dives",
+        "Multiple deco gases, complex staging"
+      ],
+      "notes": "Highest OC trimix level in many systems.",
+      "links": [
+        "https://www.tdisdi.com/tdi/get-certified/advanced-trimix-diver/"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-tdi-ccr-air-diluent-diver",
+      "agency": "agency-tdi",
+      "name": "CCR Air Diluent Diver",
+      "abbr": "CCR Air Dil",
+      "category": "rebreather",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": [
+          "Minimum age 18 years",
+          "Recreational prerequisites per standards",
+          "Unit-specific requirements"
+        ]
+      },
+      "equivalent_to": ["cert-padi-tec-40-ccr", "cert-raid-ccr-40"],
+      "limits": [
+        "Unit-specific CCR training with air/nitrox diluent",
+        "Bailout and emergency procedures"
+      ],
+      "notes": "Entry-level CCR unit-specific qualification.",
+      "links": [
+        "https://www.tdisdi.com/tdi/get-certified/ccr-air-diluent-diver/"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-tdi-nitrox-diver",
+      "agency": "agency-tdi",
+      "name": "Nitrox Diver",
+      "abbr": "Nitrox",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Open Water Diver or equivalent"]
+      },
+      "equivalent_to": [
+        "cert-padi-enriched-air-diver",
+        "cert-ssi-enriched-air-nitrox-40",
+        "cert-sdi-computer-nitrox"
+      ],
+      "limits": [
+        "Nitrox up to 40% O2",
+        "No decompression unless otherwise qualified"
+      ],
+      "notes": "Basic nitrox certification for recreational diving.",
+      "links": ["https://www.tdisdi.com/tdi/get-certified/nitrox-diver/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-tdi-helitrox-diver",
+      "agency": "agency-tdi",
+      "name": "Helitrox Diver",
+      "abbr": "Helitrox",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": [
+          "Advanced-level recreational certification",
+          "Nitrox certification",
+          "Experience per standards"
+        ]
+      },
+      "equivalent_to": [],
+      "limits": [
+        "Helium-based mixes for narcosis management",
+        "Limited decompression within training"
+      ],
+      "notes": "Entry-level helium diving without full trimix commitment.",
+      "links": ["https://www.tdisdi.com/tdi/get-certified/helitrox-diver/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-tdi-cavern-diver",
+      "agency": "agency-tdi",
+      "name": "Cavern Diver",
+      "category": "cave",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": [
+          "Advanced-level recreational certification",
+          "Good buoyancy control"
+        ]
+      },
+      "equivalent_to": [
+        "cert-nsscds-cavern-diver",
+        "cert-iantd-cavern-diver",
+        "cert-raid-cavern-diver"
+      ],
+      "limits": [
+        "Daylight zone only",
+        "Linear penetration limits",
+        "No decompression unless otherwise qualified"
+      ],
+      "notes": "First step in overhead environment training.",
+      "links": ["https://www.tdisdi.com/tdi/get-certified/cavern-diver/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-tdi-intro-to-cave-diver",
+      "agency": "agency-tdi",
+      "name": "Intro to Cave Diver",
+      "abbr": "Intro Cave",
+      "category": "cave",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-tdi-cavern-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-nsscds-intro-to-cave-diver",
+        "cert-iantd-intro-cave-diver",
+        "cert-raid-intro-to-cave-diver"
+      ],
+      "limits": ["Limited penetration distance", "Simple navigation"],
+      "notes": "Bridge between cavern and full cave.",
+      "links": ["https://www.tdisdi.com/tdi/get-certified/intro-to-cave/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-tdi-full-cave-diver",
+      "agency": "agency-tdi",
+      "name": "Full Cave Diver",
+      "abbr": "Full Cave",
+      "category": "cave",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-tdi-intro-to-cave-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-nsscds-full-cave-diver",
+        "cert-iantd-cave-diver",
+        "cert-raid-cave-2"
+      ],
+      "limits": [
+        "Complex navigation permitted",
+        "Stages and decompression if separately qualified"
+      ],
+      "notes": "Highest cave qualification in TDI system.",
+      "links": ["https://www.tdisdi.com/tdi/get-certified/full-cave-diver/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-tdi-sidemount-diver",
+      "agency": "agency-tdi",
+      "name": "Sidemount Diver",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Open Water Diver or equivalent"]
+      },
+      "equivalent_to": [
+        "cert-padi-sidemount-diver",
+        "cert-ssi-sidemount-diving",
+        "cert-sdi-sidemount-diver"
+      ],
+      "limits": [],
+      "notes": "Sidemount configuration for technical and cave diving.",
+      "links": ["https://www.tdisdi.com/tdi/get-certified/sidemount-diver/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-tdi-wreck-diver",
+      "agency": "agency-tdi",
+      "name": "Wreck Diver",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Advanced-level recreational certification"]
+      },
+      "equivalent_to": ["cert-sdi-wreck-diver"],
+      "limits": [],
+      "notes": "External wreck exploration.",
+      "links": ["https://www.tdisdi.com/tdi/get-certified/wreck-diver/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-tdi-advanced-wreck-diver",
+      "agency": "agency-tdi",
+      "name": "Advanced Wreck Diver",
+      "abbr": "Adv Wreck",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-tdi-wreck-diver"],
+        "general": []
+      },
+      "equivalent_to": [],
+      "limits": [],
+      "notes": "Limited penetration and wreck exploration beyond recreational limits.",
+      "links": [
+        "https://www.tdisdi.com/tdi/get-certified/advanced-wreck-diver/"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-tdi-ccr-helitrox-diver",
+      "agency": "agency-tdi",
+      "name": "CCR Helitrox Diver",
+      "abbr": "CCR Helitrox",
+      "category": "rebreather",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-tdi-ccr-air-diluent-diver"],
+        "general": []
+      },
+      "equivalent_to": [],
+      "limits": ["Helitrox diluent for narcosis management", "Unit-specific"],
+      "notes": "CCR diving with helium-based diluents.",
+      "links": ["https://www.tdisdi.com/tdi/get-certified/ccr-helitrox-diver/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-tdi-ccr-advanced-mixed-gas-diver",
+      "agency": "agency-tdi",
+      "name": "CCR Advanced Mixed Gas Diver",
+      "abbr": "CCR AMG",
+      "category": "rebreather",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-tdi-ccr-helitrox-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-padi-tec-60-ccr",
+        "cert-padi-tec-100-ccr",
+        "cert-raid-ccr-60",
+        "cert-raid-ccr-100"
+      ],
+      "limits": [
+        "Advanced trimix CCR diving",
+        "Complex decompression",
+        "Unit-specific"
+      ],
+      "notes": "Highest level CCR certification in TDI system.",
+      "links": [
+        "https://www.tdisdi.com/tdi/get-certified/ccr-advanced-mixed-gas-diver/"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-cmas-one-star-diver",
+      "agency": "agency-cmas",
+      "name": "CMAS One Star Diver (*)",
+      "abbr": "CMAS *",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Basic swimming ability", "Medical clearance as required"]
+      },
+      "equivalent_to": [
+        "cert-padi-owd",
+        "cert-ssi-open-water-diver",
+        "cert-sdi-open-water-scuba-diver",
+        "cert-bsac-ocean-diver"
+      ],
+      "limits": [
+        "Autonomous within training and local regulations",
+        "Typical depth 20 m (national variations)"
+      ],
+      "notes": "Issued through national federations; limits may vary by federation.",
+      "links": ["https://www.cmas.org/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-cmas-two-star-diver",
+      "agency": "agency-cmas",
+      "name": "CMAS Two Star Diver (**)",
+      "abbr": "CMAS **",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-cmas-one-star-diver"],
+        "general": ["Experience per federation"]
+      },
+      "equivalent_to": [
+        "cert-padi-aowd",
+        "cert-ssi-advanced-adventurer",
+        "cert-sdi-advanced-adventure-diver"
+      ],
+      "limits": [
+        "Extended depth training (often to ~30 m)",
+        "No decompression (unless local federation standards allow training exposures)"
+      ],
+      "notes": "Intermediate diver with broader skills; national specifics apply.",
+      "links": ["https://www.cmas.org/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-cmas-three-star-diver",
+      "agency": "agency-cmas",
+      "name": "CMAS Three Star Diver (***)",
+      "abbr": "CMAS ***",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-cmas-two-star-diver"],
+        "general": ["Rescue/leadership skills per federation"]
+      },
+      "equivalent_to": [
+        "cert-naui-master-scuba-diver",
+        "cert-bsac-dive-leader"
+      ],
+      "limits": [
+        "Leadership-level recreational diving within federation rules"
+      ],
+      "notes": "Experienced diver grade; not an instructor but high competency.",
+      "links": ["https://www.cmas.org/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-cmas-four-star-diver",
+      "agency": "agency-cmas",
+      "name": "CMAS Four Star Diver (****)",
+      "abbr": "CMAS ****",
+      "category": "professional",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-cmas-three-star-diver"],
+        "general": ["Leadership and instructor prerequisites per federation"]
+      },
+      "equivalent_to": [],
+      "limits": [],
+      "notes": "Instructor level or equivalent in CMAS federations.",
+      "links": ["https://www.cmas.org/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-bsac-ocean-diver",
+      "agency": "agency-bsac",
+      "name": "Ocean Diver",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Club membership", "Training prerequisites per BSAC"]
+      },
+      "equivalent_to": [
+        "cert-padi-owd",
+        "cert-ssi-open-water-diver",
+        "cert-sdi-open-water-scuba-diver"
+      ],
+      "limits": [
+        "Typical depth 20 m (66 ft) after progression",
+        "No decompression dives"
+      ],
+      "notes": "Club-based initial qualification in the BSAC system.",
+      "links": ["https://www.bsac.com/training/learn-to-dive/ocean-diver/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-bsac-sports-diver",
+      "agency": "agency-bsac",
+      "name": "Sports Diver",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-bsac-ocean-diver"],
+        "general": []
+      },
+      "equivalent_to": ["cert-padi-aowd", "cert-ssi-advanced-adventurer"],
+      "limits": [
+        "Progressive depth increases (commonly up to 35 m/115 ft with experience sign-offs)",
+        "Planned decompression techniques via BSAC training pathways"
+      ],
+      "notes": "Adds rescue elements and progression to deeper depths.",
+      "links": ["https://www.bsac.com/training/grow-your-skills/sports-diver/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-bsac-dive-leader",
+      "agency": "agency-bsac",
+      "name": "Dive Leader",
+      "category": "professional",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-bsac-sports-diver"],
+        "general": []
+      },
+      "equivalent_to": ["cert-padi-rescue-diver", "cert-padi-divemaster"],
+      "limits": ["Dive management responsibilities within club framework"],
+      "notes": "Leadership qualification preparing for instructor progression.",
+      "links": ["https://www.bsac.com/training/lead-others/dive-leader/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-bsac-advanced-diver",
+      "agency": "agency-bsac",
+      "name": "Advanced Diver",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-bsac-sports-diver"],
+        "general": []
+      },
+      "equivalent_to": [],
+      "limits": ["Extended depth and experience"],
+      "notes": "BSAC advanced recreational level.",
+      "links": [
+        "https://www.bsac.com/training/grow-your-skills/advanced-diver/"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-bsac-first-class-diver",
+      "agency": "agency-bsac",
+      "name": "First Class Diver",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-bsac-advanced-diver"],
+        "general": []
+      },
+      "equivalent_to": [],
+      "limits": ["High-level recreational and technical skills"],
+      "notes": "BSAC's highest non-leadership diver grade.",
+      "links": [
+        "https://www.bsac.com/training/grow-your-skills/first-class-diver/"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-gue-fundamentals",
+      "agency": "agency-gue",
+      "name": "GUE Fundamentals",
+      "abbr": "Fundies",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": ["DIR-F"],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["OWD-equivalent certification", "Recent diving experience"]
+      },
+      "equivalent_to": [],
+      "limits": ["Not a depth rating; skill and configuration standardization"],
+      "notes": "Performance-based pass (rec/tech rating) gating higher GUE training.",
+      "links": ["https://www.gue.com/training/recreational/gue-fundamentals"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-gue-tech-1",
+      "agency": "agency-gue",
+      "name": "Tech 1",
+      "abbr": "T1",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-gue-fundamentals"],
+        "general": [
+          "GUE Fundamentals passed at tech rating",
+          "Experience prerequisites per GUE"
+        ]
+      },
+      "equivalent_to": [
+        "cert-tdi-advanced-nitrox",
+        "cert-tdi-decompression-procedures",
+        "cert-padi-tec-45"
+      ],
+      "limits": [
+        "Helitrox/trimix as per course standards",
+        "Staged decompression within course limits"
+      ],
+      "notes": "Standardized team-protocol technical course.",
+      "links": ["https://www.gue.com/training/technical/gue-tech-1"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-gue-tech-2",
+      "agency": "agency-gue",
+      "name": "Tech 2",
+      "abbr": "T2",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-gue-tech-1"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-tdi-advanced-trimix-diver",
+        "cert-padi-tec-trimix-diver"
+      ],
+      "limits": [
+        "Hypoxic trimix dives within course limits",
+        "Multiple deco gases"
+      ],
+      "notes": "Advanced team-based helium diving.",
+      "links": ["https://www.gue.com/training/technical/gue-tech-2"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-gue-recreational-diver-1",
+      "agency": "agency-gue",
+      "name": "Recreational Diver 1",
+      "abbr": "Rec 1",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Minimum age per GUE standards", "Medical clearance"]
+      },
+      "equivalent_to": ["cert-padi-owd"],
+      "limits": ["Recreational limits within GUE standards"],
+      "notes": "GUE's entry-level recreational certification with standardized equipment configuration.",
+      "links": [
+        "https://www.gue.com/training/recreational/recreational-diver-1"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-gue-recreational-diver-2",
+      "agency": "agency-gue",
+      "name": "Recreational Diver 2",
+      "abbr": "Rec 2",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-gue-recreational-diver-1"],
+        "general": []
+      },
+      "equivalent_to": ["cert-padi-aowd"],
+      "limits": ["Extended depth training within GUE recreational standards"],
+      "notes": "GUE advanced recreational level.",
+      "links": [
+        "https://www.gue.com/training/recreational/recreational-diver-2"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-gue-recreational-diver-3",
+      "agency": "agency-gue",
+      "name": "Recreational Diver 3",
+      "abbr": "Rec 3",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-gue-recreational-diver-2"],
+        "general": []
+      },
+      "equivalent_to": [],
+      "limits": ["Advanced recreational diving with GUE protocols"],
+      "notes": "Highest GUE recreational level.",
+      "links": [
+        "https://www.gue.com/training/recreational/recreational-diver-3"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-gue-cave-1",
+      "agency": "agency-gue",
+      "name": "Cave 1",
+      "category": "cave",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-gue-fundamentals"],
+        "general": ["GUE Fundamentals passed at tech rating"]
+      },
+      "equivalent_to": [
+        "cert-tdi-intro-to-cave-diver",
+        "cert-nsscds-intro-to-cave-diver"
+      ],
+      "limits": [
+        "Limited cave penetration",
+        "Simple navigation",
+        "Single tanks or stages per standards"
+      ],
+      "notes": "GUE's standardized cave training level 1.",
+      "links": ["https://www.gue.com/training/cave/cave-1"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-gue-cave-2",
+      "agency": "agency-gue",
+      "name": "Cave 2",
+      "abbr": "Cave 2",
+      "category": "cave",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-gue-cave-1"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-tdi-full-cave-diver",
+        "cert-nsscds-full-cave-diver"
+      ],
+      "limits": [
+        "Complex navigation",
+        "Multiple stages",
+        "DPV use per standards"
+      ],
+      "notes": "GUE's highest cave certification with advanced techniques.",
+      "links": ["https://www.gue.com/training/cave/cave-2"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-iantd-advanced-nitrox-diver",
+      "agency": "agency-iantd",
+      "name": "Advanced Nitrox Diver",
+      "abbr": "AN",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Appropriate recreational prerequisites", "Nitrox training"]
+      },
+      "equivalent_to": ["cert-tdi-advanced-nitrox", "cert-padi-tec-40"],
+      "limits": [
+        "High-O2 mixes for accelerated decompression when paired with deco training"
+      ],
+      "notes": "IANTD pioneered nitrox training; pathways vary by region.",
+      "links": ["https://www.iantd.com/pages/courses.php"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-iantd-normoxic-trimix-diver",
+      "agency": "agency-iantd",
+      "name": "Normoxic Trimix Diver",
+      "abbr": "Normoxic TMX",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-iantd-advanced-nitrox-diver"],
+        "general": ["Decompression training"]
+      },
+      "equivalent_to": ["cert-tdi-trimix-diver", "cert-padi-tec-trimix-65"],
+      "limits": ["Normoxic trimix within course limits"],
+      "notes": "Helium-based gas management and staged decompression.",
+      "links": ["https://www.iantd.com/pages/courses.php"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-iantd-open-water-diver",
+      "agency": "agency-iantd",
+      "name": "Open Water Diver",
+      "abbr": "OWD",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Basic swimming ability", "Medical clearance"]
+      },
+      "equivalent_to": ["cert-padi-owd", "cert-ssi-open-water-diver"],
+      "limits": ["Recreational limits per IANTD"],
+      "notes": "IANTD recreational entry-level.",
+      "links": ["https://www.iantd.com/pages/courses.php"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-iantd-nitrox-diver",
+      "agency": "agency-iantd",
+      "name": "Nitrox Diver",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Open Water Diver or equivalent"]
+      },
+      "equivalent_to": [
+        "cert-padi-enriched-air-diver",
+        "cert-tdi-nitrox-diver"
+      ],
+      "limits": ["Nitrox up to 40% O2"],
+      "notes": "IANTD pioneered nitrox training.",
+      "links": ["https://www.iantd.com/pages/courses.php"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-iantd-advanced-trimix-diver",
+      "agency": "agency-iantd",
+      "name": "Advanced Trimix Diver",
+      "abbr": "Adv TMX",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-iantd-normoxic-trimix-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-tdi-advanced-trimix-diver",
+        "cert-padi-tec-trimix-diver"
+      ],
+      "limits": ["Hypoxic trimix for very deep dives"],
+      "notes": "IANTD's highest open circuit trimix level.",
+      "links": ["https://www.iantd.com/pages/courses.php"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-iantd-cavern-diver",
+      "agency": "agency-iantd",
+      "name": "Cavern Diver",
+      "category": "cave",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Advanced-level recreational certification"]
+      },
+      "equivalent_to": ["cert-tdi-cavern-diver", "cert-nsscds-cavern-diver"],
+      "limits": ["Daylight zone only"],
+      "notes": "IANTD cavern certification.",
+      "links": ["https://www.iantd.com/pages/courses.php"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-iantd-intro-cave-diver",
+      "agency": "agency-iantd",
+      "name": "Intro Cave Diver",
+      "abbr": "Intro Cave",
+      "category": "cave",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-iantd-cavern-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-tdi-intro-to-cave-diver",
+        "cert-nsscds-intro-to-cave-diver"
+      ],
+      "limits": ["Limited penetration"],
+      "notes": "IANTD intro to cave.",
+      "links": ["https://www.iantd.com/pages/courses.php"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-iantd-cave-diver",
+      "agency": "agency-iantd",
+      "name": "Cave Diver",
+      "abbr": "Cave",
+      "category": "cave",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-iantd-intro-cave-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-tdi-full-cave-diver",
+        "cert-nsscds-full-cave-diver"
+      ],
+      "limits": ["Complex navigation permitted"],
+      "notes": "IANTD full cave certification.",
+      "links": ["https://www.iantd.com/pages/courses.php"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-iantd-ccr-advanced-mixed-gas",
+      "agency": "agency-iantd",
+      "name": "CCR Advanced Mixed Gas Diver",
+      "abbr": "CCR AMG",
+      "category": "rebreather",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["CCR certification", "Advanced mixed gas experience"]
+      },
+      "equivalent_to": [
+        "cert-padi-tec-100-ccr",
+        "cert-tdi-ccr-advanced-mixed-gas-diver"
+      ],
+      "limits": ["Advanced CCR with trimix"],
+      "notes": "IANTD advanced CCR level.",
+      "links": ["https://www.iantd.com/pages/courses.php"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-iantd-intro-to-tech",
+      "agency": "agency-iantd",
+      "name": "Intro to Tech",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Advanced recreational certification"]
+      },
+      "equivalent_to": ["cert-tdi-intro-to-tech", "cert-raid-intro-to-tech"],
+      "limits": [],
+      "notes": "Technical diving skills foundation.",
+      "links": ["https://www.iantd.com/pages/courses.php"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-raid-open-water-20",
+      "agency": "agency-raid",
+      "name": "Open Water 20",
+      "abbr": "OW20",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Basic swimming ability", "Medical clearance as required"]
+      },
+      "equivalent_to": [
+        "cert-padi-owd",
+        "cert-ssi-open-water-diver",
+        "cert-sdi-open-water-scuba-diver"
+      ],
+      "limits": ["Training to 20 m (66 ft)", "No decompression dives"],
+      "notes": "RAID entry-level autonomous diver certification.",
+      "links": ["https://diveraid.com/courses/ow20/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-raid-explorer-30",
+      "agency": "agency-raid",
+      "name": "Explorer 30",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-raid-open-water-20"],
+        "general": []
+      },
+      "equivalent_to": ["cert-padi-aowd", "cert-ssi-advanced-adventurer"],
+      "limits": [
+        "Recommended to 30 m (100 ft) with deep module",
+        "No decompression dives"
+      ],
+      "notes": "Post-OW structured experience with adventure dives.",
+      "links": ["https://diveraid.com/courses/explorer-30/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-raid-deco-40",
+      "agency": "agency-raid",
+      "name": "Decompression Procedures 40",
+      "abbr": "Deco 40",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": [
+          "Intermediate/advanced recreational training",
+          "Nitrox and deep training per standards"
+        ]
+      },
+      "equivalent_to": [
+        "cert-tdi-advanced-nitrox",
+        "cert-tdi-decompression-procedures",
+        "cert-padi-tec-40"
+      ],
+      "limits": [
+        "Limited decompression per course standards",
+        "One decompression gas"
+      ],
+      "notes": "Bridge from recreational to technical in RAID pathway.",
+      "links": ["https://diveraid.com/courses/deco-40/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-raid-nitrox",
+      "agency": "agency-raid",
+      "name": "Nitrox",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Open Water Diver or equivalent"]
+      },
+      "equivalent_to": [
+        "cert-padi-enriched-air-diver",
+        "cert-ssi-enriched-air-nitrox-40",
+        "cert-sdi-computer-nitrox"
+      ],
+      "limits": ["Nitrox up to 40% O2"],
+      "notes": "Basic nitrox certification.",
+      "links": ["https://diveraid.com/courses/nitrox/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-raid-ccr-40",
+      "agency": "agency-raid",
+      "name": "CCR 40",
+      "category": "rebreather",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": [
+          "Open Water Diver or equivalent",
+          "Unit-specific prerequisites"
+        ]
+      },
+      "equivalent_to": [
+        "cert-padi-tec-40-ccr",
+        "cert-tdi-ccr-air-diluent-diver"
+      ],
+      "limits": [
+        "CCR with air or nitrox diluent",
+        "Unit-specific configuration"
+      ],
+      "notes": "Entry-level CCR certification - RAID's specialty.",
+      "links": ["https://diveraid.com/courses/ccr-40/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-raid-ccr-60",
+      "agency": "agency-raid",
+      "name": "CCR 60",
+      "category": "rebreather",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-raid-ccr-40"],
+        "general": []
+      },
+      "equivalent_to": ["cert-padi-tec-60-ccr", "cert-tdi-ccr-helitrox-diver"],
+      "limits": ["CCR with helitrox diluent", "Staged decompression"],
+      "notes": "Intermediate CCR level with helium.",
+      "links": ["https://diveraid.com/courses/ccr-60/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-raid-ccr-100",
+      "agency": "agency-raid",
+      "name": "CCR 100",
+      "category": "rebreather",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-raid-ccr-60"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-padi-tec-100-ccr",
+        "cert-tdi-ccr-advanced-mixed-gas-diver"
+      ],
+      "limits": ["Advanced trimix CCR diving", "Complex decompression"],
+      "notes": "Advanced CCR level.",
+      "links": ["https://diveraid.com/courses/ccr-100/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-raid-ccr-120",
+      "agency": "agency-raid",
+      "name": "CCR 120",
+      "category": "rebreather",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-raid-ccr-100"],
+        "general": []
+      },
+      "equivalent_to": [],
+      "limits": [
+        "Very deep CCR diving with hypoxic trimix",
+        "Extensive decompression"
+      ],
+      "notes": "Highest CCR level in RAID system.",
+      "links": ["https://diveraid.com/courses/ccr-120/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-raid-trimix-1",
+      "agency": "agency-raid",
+      "name": "Trimix 1",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-raid-deco-40"],
+        "general": []
+      },
+      "equivalent_to": ["cert-tdi-trimix-diver", "cert-padi-tec-trimix-65"],
+      "limits": ["Normoxic trimix"],
+      "notes": "First level trimix for RAID.",
+      "links": ["https://diveraid.com/courses/trimix-1/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-raid-trimix-2",
+      "agency": "agency-raid",
+      "name": "Trimix 2",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-raid-trimix-1"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-tdi-advanced-trimix-diver",
+        "cert-padi-tec-trimix-diver"
+      ],
+      "limits": ["Hypoxic trimix for very deep dives"],
+      "notes": "Advanced trimix level in RAID.",
+      "links": ["https://diveraid.com/courses/trimix-2/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-raid-cavern-diver",
+      "agency": "agency-raid",
+      "name": "Cavern Diver",
+      "category": "cave",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Advanced-level recreational certification"]
+      },
+      "equivalent_to": ["cert-tdi-cavern-diver", "cert-nsscds-cavern-diver"],
+      "limits": ["Daylight zone only"],
+      "notes": "RAID cavern certification.",
+      "links": ["https://diveraid.com/courses/cavern/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-raid-intro-to-cave-diver",
+      "agency": "agency-raid",
+      "name": "Intro to Cave",
+      "category": "cave",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-raid-cavern-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-tdi-intro-to-cave-diver",
+        "cert-nsscds-intro-to-cave-diver"
+      ],
+      "limits": ["Limited penetration"],
+      "notes": "RAID intro to cave.",
+      "links": ["https://diveraid.com/courses/intro-to-cave/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-raid-cave-2",
+      "agency": "agency-raid",
+      "name": "Cave 2",
+      "category": "cave",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-raid-intro-to-cave-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-tdi-full-cave-diver",
+        "cert-nsscds-full-cave-diver"
+      ],
+      "limits": ["Complex navigation permitted"],
+      "notes": "Full cave certification in RAID system.",
+      "links": ["https://diveraid.com/courses/cave-2/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-raid-intro-to-tech",
+      "agency": "agency-raid",
+      "name": "Intro to Tech",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Advanced recreational certification"]
+      },
+      "equivalent_to": ["cert-tdi-intro-to-tech"],
+      "limits": [],
+      "notes": "Technical diving skills foundation.",
+      "links": ["https://diveraid.com/courses/intro-to-tech/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-naui-scuba-diver",
+      "agency": "agency-naui",
+      "name": "Scuba Diver",
+      "abbr": "SD",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": ["Open Water Scuba Diver"],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Basic swimming ability", "Medical clearance as required"]
+      },
+      "equivalent_to": [
+        "cert-padi-owd",
+        "cert-ssi-open-water-diver",
+        "cert-sdi-open-water-scuba-diver"
+      ],
+      "limits": [
+        "Recommended max depth 18 m (60 ft)",
+        "No decompression dives"
+      ],
+      "notes": "NAUI entry-level autonomous diver certification.",
+      "links": ["https://www.naui.org/certifications/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-naui-advanced-scuba-diver",
+      "agency": "agency-naui",
+      "name": "Advanced Scuba Diver",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-naui-scuba-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-padi-aowd",
+        "cert-ssi-advanced-adventurer",
+        "cert-sdi-advanced-adventure-diver"
+      ],
+      "limits": [
+        "Recommended training to 30 m (100 ft)",
+        "No decompression dives"
+      ],
+      "notes": "NAUI's advanced recreational step.",
+      "links": ["https://www.naui.org/certifications/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-naui-rescue-diver",
+      "agency": "agency-naui",
+      "name": "Rescue Diver",
+      "abbr": "RD",
+      "category": "rescue",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-naui-advanced-scuba-diver"],
+        "general": ["Current first aid/CPR"]
+      },
+      "equivalent_to": [
+        "cert-padi-rescue-diver",
+        "cert-ssi-diver-stress-and-rescue",
+        "cert-sdi-rescue-diver"
+      ],
+      "limits": ["Not a depth rating"],
+      "notes": "Required for leadership path.",
+      "links": ["https://www.naui.org/certifications/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-naui-master-scuba-diver",
+      "agency": "agency-naui",
+      "name": "Master Scuba Diver",
+      "abbr": "MSD",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-naui-rescue-diver"],
+        "general": [
+          "Four NAUI specialty certifications",
+          "Minimum 50 logged dives"
+        ]
+      },
+      "equivalent_to": [
+        "cert-padi-master-scuba-diver",
+        "cert-ssi-master-diver",
+        "cert-sdi-master-scuba-diver"
+      ],
+      "limits": ["Recognition rating"],
+      "notes": "NAUI's highest non-professional recognition rating.",
+      "links": ["https://www.naui.org/certifications/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-naui-divemaster",
+      "agency": "agency-naui",
+      "name": "Divemaster",
+      "abbr": "DM",
+      "category": "professional",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-naui-rescue-diver"],
+        "general": [
+          "Minimum age 18 years",
+          "Minimum 50 logged dives",
+          "Current CPR/First Aid"
+        ]
+      },
+      "equivalent_to": [
+        "cert-padi-divemaster",
+        "cert-ssi-dive-guide",
+        "cert-sdi-divemaster"
+      ],
+      "limits": ["May supervise certified divers", "May assist with training"],
+      "notes": "NAUI professional-level certification.",
+      "links": ["https://www.naui.org/certifications/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-naui-nitrox-diver",
+      "agency": "agency-naui",
+      "name": "Nitrox Diver",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Open Water Diver or equivalent"]
+      },
+      "equivalent_to": [
+        "cert-padi-enriched-air-diver",
+        "cert-ssi-enriched-air-nitrox-40",
+        "cert-sdi-computer-nitrox"
+      ],
+      "limits": ["Nitrox up to 40% O2"],
+      "notes": "Basic nitrox certification.",
+      "links": ["https://www.naui.org/certifications/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-naui-deep-diver",
+      "agency": "agency-naui",
+      "name": "Deep Diver",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Advanced-level certification"]
+      },
+      "equivalent_to": ["cert-padi-deep-diver", "cert-ssi-deep-diving"],
+      "limits": [],
+      "notes": "Deep diving to 40 m (130 ft).",
+      "links": ["https://www.naui.org/certifications/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-naui-wreck-diver",
+      "agency": "agency-naui",
+      "name": "Wreck Diver",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Open Water Diver or equivalent"]
+      },
+      "equivalent_to": ["cert-padi-wreck-diver", "cert-ssi-wreck-diving"],
+      "limits": [],
+      "notes": "Wreck diving techniques.",
+      "links": ["https://www.naui.org/certifications/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-naui-night-diver",
+      "agency": "agency-naui",
+      "name": "Night Diver",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Open Water Diver or equivalent"]
+      },
+      "equivalent_to": [
+        "cert-padi-night-diver",
+        "cert-ssi-night-limited-visibility"
+      ],
+      "limits": [],
+      "notes": "Night diving techniques.",
+      "links": ["https://www.naui.org/certifications/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-naui-navigation",
+      "agency": "agency-naui",
+      "name": "Navigation",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Open Water Diver or equivalent"]
+      },
+      "equivalent_to": [
+        "cert-padi-underwater-navigator",
+        "cert-ssi-navigation"
+      ],
+      "limits": [],
+      "notes": "Underwater navigation techniques.",
+      "links": ["https://www.naui.org/certifications/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-nsscds-cavern-diver",
+      "agency": "agency-nss-cds",
+      "name": "Cavern Diver",
+      "category": "cave",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": [
+          "Advanced-level recreational certification",
+          "Buoyancy and guideline skills training per standards"
+        ]
+      },
+      "equivalent_to": [
+        "cert-tdi-cavern-diver",
+        "cert-iantd-cavern-diver",
+        "cert-raid-cavern-diver"
+      ],
+      "limits": [
+        "Cavern zone only: daylight zone, within linear/penetration limits per standards",
+        "No decompression unless otherwise qualified",
+        "No complex navigation"
+      ],
+      "notes": "First step in the cave progression.",
+      "links": ["https://nsscds.org/training/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-nsscds-intro-to-cave-diver",
+      "agency": "agency-nss-cds",
+      "name": "Intro to Cave Diver",
+      "abbr": "Intro Cave",
+      "category": "cave",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-nsscds-cavern-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-tdi-intro-to-cave-diver",
+        "cert-iantd-intro-cave-diver",
+        "cert-raid-intro-to-cave-diver"
+      ],
+      "limits": [
+        "Limited penetration distance and simple navigation",
+        "No complex circuits/siphons unless trained"
+      ],
+      "notes": "Bridges cavern to full cave with conservative limits.",
+      "links": ["https://nsscds.org/training/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-nsscds-full-cave-diver",
+      "agency": "agency-nss-cds",
+      "name": "Full Cave Diver",
+      "abbr": "Full Cave",
+      "category": "cave",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-nsscds-intro-to-cave-diver"],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-tdi-full-cave-diver",
+        "cert-iantd-cave-diver",
+        "cert-raid-cave-2"
+      ],
+      "limits": [
+        "Complex navigation permitted within training",
+        "Stages and decompression only if separately qualified"
+      ],
+      "notes": "Highest cave qualification in many agency frameworks.",
+      "links": ["https://nsscds.org/training/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-cdaa-basic-cave",
+      "agency": "agency-cdaa",
+      "name": "Basic Cave",
+      "abbr": "Basic Cave",
+      "category": "cave",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": [
+          "Advanced-level recreational certification",
+          "Cavern-level training per CDAA standards"
+        ]
+      },
+      "equivalent_to": ["cert-nsscds-cavern-diver"],
+      "limits": ["Australian CDAA site categories apply (sinkholes/caverns)"],
+      "notes": "CDAA scheme differs by site category; check current CDAA standards.",
+      "links": ["https://www.cavedivers.com.au/training/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-aida-1",
+      "agency": "agency-aida-international",
+      "name": "AIDA 1",
+      "abbr": "AIDA 1",
+      "category": "freediving",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Basic water comfort", "Medical clearance as required"]
+      },
+      "equivalent_to": ["cert-molchanovs-wave-1", "cert-apnea-academy-level-1"],
+      "limits": ["Introductory freediving knowledge/skills"],
+      "notes": "First step in the AIDA education ladder.",
+      "links": ["https://www.aidainternational.org/Education"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-aida-2",
+      "agency": "agency-aida-international",
+      "name": "AIDA 2",
+      "abbr": "AIDA 2",
+      "category": "freediving",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-aida-1"],
+        "general": []
+      },
+      "equivalent_to": ["cert-molchanovs-wave-1", "cert-apnea-academy-level-1"],
+      "limits": ["Fundamental open water freediving skills and safety"],
+      "notes": "Common entry level for autonomous freedivers.",
+      "links": ["https://www.aidainternational.org/Education"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-aida-3",
+      "agency": "agency-aida-international",
+      "name": "AIDA 3",
+      "abbr": "AIDA 3",
+      "category": "freediving",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-aida-2"],
+        "general": []
+      },
+      "equivalent_to": ["cert-molchanovs-wave-2"],
+      "limits": ["Intermediate freediving with deeper capabilities"],
+      "notes": "Intermediate AIDA freediving level.",
+      "links": ["https://www.aidainternational.org/Education"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-aida-4",
+      "agency": "agency-aida-international",
+      "name": "AIDA 4",
+      "abbr": "AIDA 4",
+      "category": "freediving",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-aida-3"],
+        "general": []
+      },
+      "equivalent_to": ["cert-molchanovs-wave-3"],
+      "limits": ["Advanced freediving depths and techniques"],
+      "notes": "Advanced AIDA freediving level.",
+      "links": ["https://www.aidainternational.org/Education"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-aida-master",
+      "agency": "agency-aida-international",
+      "name": "AIDA Master",
+      "abbr": "AIDA Master",
+      "category": "freediving",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-aida-4"],
+        "general": []
+      },
+      "equivalent_to": ["cert-molchanovs-wave-4"],
+      "limits": ["Expert level freediving"],
+      "notes": "AIDA's highest non-instructor level.",
+      "links": ["https://www.aidainternational.org/Education"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-molchanovs-wave-1",
+      "agency": "agency-molchanovs",
+      "name": "Wave 1",
+      "abbr": "W1",
+      "category": "freediving",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Basic water comfort", "Medical clearance as required"]
+      },
+      "equivalent_to": ["cert-aida-2", "cert-apnea-academy-level-1"],
+      "limits": ["Introductory depth and pool disciplines per standards"],
+      "notes": "Molchanovs progression Wave 1–4.",
+      "links": ["https://molchanovs.com/freediving-education"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-molchanovs-wave-2",
+      "agency": "agency-molchanovs",
+      "name": "Wave 2",
+      "abbr": "W2",
+      "category": "freediving",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-molchanovs-wave-1"],
+        "general": []
+      },
+      "equivalent_to": ["cert-aida-3"],
+      "limits": ["Intermediate depth and performance"],
+      "notes": "Molchanovs Wave 2.",
+      "links": ["https://molchanovs.com/freediving-education"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-molchanovs-wave-3",
+      "agency": "agency-molchanovs",
+      "name": "Wave 3",
+      "abbr": "W3",
+      "category": "freediving",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-molchanovs-wave-2"],
+        "general": []
+      },
+      "equivalent_to": ["cert-aida-4"],
+      "limits": ["Advanced freediving"],
+      "notes": "Molchanovs Wave 3.",
+      "links": ["https://molchanovs.com/freediving-education"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-molchanovs-wave-4",
+      "agency": "agency-molchanovs",
+      "name": "Wave 4",
+      "abbr": "W4",
+      "category": "freediving",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-molchanovs-wave-3"],
+        "general": []
+      },
+      "equivalent_to": ["cert-aida-master"],
+      "limits": ["Expert level freediving"],
+      "notes": "Molchanovs Wave 4 - highest level.",
+      "links": ["https://molchanovs.com/freediving-education"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-pfi-freediver",
+      "agency": "agency-pfi",
+      "name": "Freediver",
+      "abbr": "Freediver",
+      "category": "freediving",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Basic water comfort", "Medical clearance"]
+      },
+      "equivalent_to": ["cert-aida-2", "cert-molchanovs-wave-1"],
+      "limits": ["Entry level freediving"],
+      "notes": "PFI entry level freediving certification.",
+      "links": ["https://www.performancefreediving.com/certifications/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-pfi-intermediate-freediver",
+      "agency": "agency-pfi",
+      "name": "Intermediate Freediver",
+      "abbr": "Int Freediver",
+      "category": "freediving",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-pfi-freediver"],
+        "general": []
+      },
+      "equivalent_to": ["cert-aida-3"],
+      "limits": ["Intermediate freediving"],
+      "notes": "PFI intermediate freediving.",
+      "links": ["https://www.performancefreediving.com/certifications/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-pfi-advanced-freediver",
+      "agency": "agency-pfi",
+      "name": "Advanced Freediver",
+      "abbr": "Adv Freediver",
+      "category": "freediving",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-pfi-intermediate-freediver"],
+        "general": []
+      },
+      "equivalent_to": ["cert-aida-4"],
+      "limits": ["Advanced freediving"],
+      "notes": "PFI advanced freediving.",
+      "links": ["https://www.performancefreediving.com/certifications/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-apnea-academy-level-1",
+      "agency": "agency-apnea-academy",
+      "name": "Level 1 Freediver",
+      "abbr": "L1",
+      "category": "freediving",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Basic water comfort"]
+      },
+      "equivalent_to": ["cert-aida-1", "cert-molchanovs-wave-1"],
+      "limits": ["Entry level freediving"],
+      "notes": "Apnea Academy entry level.",
+      "links": ["https://www.apnea-academy.com/courses"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-andi-level-1-sport-diver",
+      "agency": "agency-andi",
+      "name": "Level 1 — Sport Diver",
+      "abbr": "L1",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Basic swimming ability", "Medical clearance as required"]
+      },
+      "equivalent_to": ["cert-padi-owd", "cert-ssi-open-water-diver"],
+      "limits": ["Recreational limits per ANDI standards"],
+      "notes": "ANDI recreational entry-level certification.",
+      "links": ["https://www.andidiving.com/en/courses"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-protec-extended-range",
+      "agency": "agency-protec",
+      "name": "Extended Range",
+      "abbr": "XR",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": [
+          "Advanced recreational training",
+          "Nitrox and deco competencies per standards"
+        ]
+      },
+      "equivalent_to": [
+        "cert-tdi-extended-range",
+        "cert-padi-tec-50",
+        "cert-raid-deco-40"
+      ],
+      "limits": [
+        "Deeper dives with staged decompression within ProTec standards"
+      ],
+      "notes": "ProTec XR program for staged decompression diving.",
+      "links": ["https://protec-diving.com/en/training/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-ise-technical-foundation",
+      "agency": "agency-ise",
+      "name": "Technical Foundation",
+      "abbr": "Tech Foundation",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": [
+          "Advanced recreational certification",
+          "Solid buoyancy/trim"
+        ]
+      },
+      "equivalent_to": ["cert-gue-fundamentals"],
+      "limits": ["Not a depth rating; skills-based for technical path"],
+      "notes": "ISE gateway course into standardization for tech/cave.",
+      "links": ["https://www.is-expl.com/education/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-swedtech-advanced-nitrox",
+      "agency": "agency-swedtech",
+      "name": "Advanced Nitrox",
+      "abbr": "AN",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Nitrox and deep experience per standards"]
+      },
+      "equivalent_to": [
+        "cert-tdi-advanced-nitrox",
+        "cert-iantd-advanced-nitrox-diver"
+      ],
+      "limits": ["High-O2 mixes for deco when paired with deco training"],
+      "notes": "European technical curriculum (OC/CCR).",
+      "links": ["https://swedtechdiving.se/courses/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-efr-primary-care",
+      "agency": "agency-efr",
+      "name": "Primary Care (CPR)",
+      "abbr": "EFR Primary",
+      "category": "other",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": []
+      },
+      "equivalent_to": ["cert-dan-cpr", "cert-ssi-react-right-primary"],
+      "limits": [],
+      "notes": "CPR and basic first aid; often required for Rescue Diver certification.",
+      "links": ["https://www.emergencyfirstresponse.com/courses/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-efr-secondary-care",
+      "agency": "agency-efr",
+      "name": "Secondary Care (First Aid)",
+      "abbr": "EFR Secondary",
+      "category": "other",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": []
+      },
+      "equivalent_to": ["cert-dan-first-aid"],
+      "limits": [],
+      "notes": "First aid training; often paired with Primary Care.",
+      "links": ["https://www.emergencyfirstresponse.com/courses/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-efr-care-for-children",
+      "agency": "agency-efr",
+      "name": "Care for Children",
+      "category": "other",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": []
+      },
+      "equivalent_to": [],
+      "limits": [],
+      "notes": "CPR and first aid for children and infants.",
+      "links": ["https://www.emergencyfirstresponse.com/courses/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-dan-oxygen-provider",
+      "agency": "agency-dan",
+      "name": "Oxygen Provider",
+      "category": "other",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-padi-emergency-oxygen-provider",
+        "cert-ssi-oxygen-provider"
+      ],
+      "limits": [],
+      "notes": "Emergency oxygen administration for diving injuries.",
+      "links": ["https://dan.org/training/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-dan-cpr",
+      "agency": "agency-dan",
+      "name": "Basic Life Support: CPR & AED",
+      "abbr": "DAN BLS",
+      "category": "other",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": []
+      },
+      "equivalent_to": ["cert-efr-primary-care"],
+      "limits": [],
+      "notes": "CPR and AED training.",
+      "links": ["https://dan.org/training/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-dan-first-aid",
+      "agency": "agency-dan",
+      "name": "First Aid",
+      "category": "other",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": []
+      },
+      "equivalent_to": ["cert-efr-secondary-care"],
+      "limits": [],
+      "notes": "Basic first aid training.",
+      "links": ["https://dan.org/training/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-dan-diving-emergency-management-provider",
+      "agency": "agency-dan",
+      "name": "Diving Emergency Management Provider",
+      "abbr": "DEMP",
+      "category": "other",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": []
+      },
+      "equivalent_to": [],
+      "limits": [],
+      "notes": "Comprehensive diving emergency response training.",
+      "links": ["https://dan.org/training/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-erdi-public-safety-diver",
+      "agency": "agency-erdi",
+      "name": "Public Safety Diver",
+      "abbr": "PSD",
+      "category": "professional",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": [
+          "Open Water Diver or equivalent",
+          "Law enforcement or emergency services personnel"
+        ]
+      },
+      "equivalent_to": [],
+      "limits": [],
+      "notes": "Public safety diving for law enforcement and emergency response.",
+      "links": [
+        "https://www.tdisdi.com/erdi/get-certified/public-safety-diver/"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-erdi-underwater-crime-scene-investigator",
+      "agency": "agency-erdi",
+      "name": "Underwater Crime Scene Investigator",
+      "abbr": "UCSI",
+      "category": "professional",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-erdi-public-safety-diver"],
+        "general": []
+      },
+      "equivalent_to": [],
+      "limits": [],
+      "notes": "Underwater crime scene investigation and evidence recovery.",
+      "links": [
+        "https://www.tdisdi.com/erdi/get-certified/underwater-crime-scene-investigator/"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-erdi-search-and-recovery",
+      "agency": "agency-erdi",
+      "name": "Search and Recovery",
+      "category": "professional",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-erdi-public-safety-diver"],
+        "general": []
+      },
+      "equivalent_to": [],
+      "limits": [],
+      "notes": "Public safety search and recovery operations.",
+      "links": [
+        "https://www.tdisdi.com/erdi/get-certified/search-and-recovery/"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-erdi-confined-space-diver",
+      "agency": "agency-erdi",
+      "name": "Confined Space Diver",
+      "category": "professional",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-erdi-public-safety-diver"],
+        "general": []
+      },
+      "equivalent_to": [],
+      "limits": [],
+      "notes": "Diving in confined spaces for public safety.",
+      "links": [
+        "https://www.tdisdi.com/erdi/get-certified/confined-space-diver/"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-ssi-oxygen-provider",
+      "agency": "agency-ssi",
+      "name": "React Right Oxygen Provider",
+      "category": "other",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": []
+      },
+      "equivalent_to": [
+        "cert-dan-oxygen-provider",
+        "cert-padi-emergency-oxygen-provider"
+      ],
+      "limits": [],
+      "notes": "Emergency oxygen provider training.",
+      "links": [
+        "https://www.divessi.com/en/certifications/other/react-right-oxygen-provider"
+      ],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-utd-recreational-1",
+      "agency": "agency-utd",
+      "name": "Recreational 1",
+      "abbr": "Rec 1",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Basic swimming ability", "Medical clearance"]
+      },
+      "equivalent_to": ["cert-padi-owd", "cert-gue-recreational-diver-1"],
+      "limits": ["Recreational limits per UTD standards"],
+      "notes": "UTD entry-level with team-based approach.",
+      "links": ["https://utdscubadiving.com/courses/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-utd-essentials",
+      "agency": "agency-utd",
+      "name": "Essentials",
+      "category": "specialty",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Open Water Diver or equivalent"]
+      },
+      "equivalent_to": ["cert-gue-fundamentals"],
+      "limits": [],
+      "notes": "UTD skills and equipment standardization course.",
+      "links": ["https://utdscubadiving.com/courses/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-utd-tech-1",
+      "agency": "agency-utd",
+      "name": "Tech 1",
+      "abbr": "T1",
+      "category": "technical",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-utd-essentials"],
+        "general": []
+      },
+      "equivalent_to": ["cert-gue-tech-1"],
+      "limits": ["Helium-based mixes", "Staged decompression"],
+      "notes": "UTD technical level 1.",
+      "links": ["https://utdscubadiving.com/courses/"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+
+    {
+      "id": "cert-ffessm-niveau-1",
+      "agency": "agency-ffessm",
+      "name": "Niveau 1 (Plongeur Encadré 20m)",
+      "abbr": "N1/PE20",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": ["Minimum age 12 years", "Medical certificate"]
+      },
+      "equivalent_to": ["cert-cmas-one-star-diver", "cert-padi-owd"],
+      "limits": [
+        "Supervised to 20 m or autonomous to 12 m with appropriate certification"
+      ],
+      "notes": "French entry-level CMAS certification.",
+      "links": ["https://ffessm.fr/pratiquer/formations"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-ffessm-niveau-2",
+      "agency": "agency-ffessm",
+      "name": "Niveau 2 (Plongeur Autonome 20m)",
+      "abbr": "N2/PA20",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-ffessm-niveau-1"],
+        "general": ["Experience per FFESSM"]
+      },
+      "equivalent_to": ["cert-cmas-two-star-diver", "cert-padi-aowd"],
+      "limits": ["Autonomous to 20 m, supervised to 40 m"],
+      "notes": "French intermediate CMAS level.",
+      "links": ["https://ffessm.fr/pratiquer/formations"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-ffessm-niveau-3",
+      "agency": "agency-ffessm",
+      "name": "Niveau 3 (Plongeur Autonome 60m)",
+      "abbr": "N3/PA60",
+      "category": "recreational",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-ffessm-niveau-2"],
+        "general": ["Experience and skills per FFESSM"]
+      },
+      "equivalent_to": ["cert-cmas-three-star-diver"],
+      "limits": ["Autonomous to 60 m within French system"],
+      "notes": "French advanced CMAS level.",
+      "links": ["https://ffessm.fr/pratiquer/formations"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    },
+    {
+      "id": "cert-ffessm-niveau-4",
+      "agency": "agency-ffessm",
+      "name": "Niveau 4 (Guide de Palanquée)",
+      "abbr": "N4/GP",
+      "category": "professional",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-ffessm-niveau-3"],
+        "general": ["Leadership skills per FFESSM"]
+      },
+      "equivalent_to": [],
+      "limits": [],
+      "notes": "Leadership/guide level in French system.",
+      "links": ["https://ffessm.fr/pratiquer/formations"],
+      "updated_at": "2025-10-31T12:00:00Z"
+    }
+  ]
+}

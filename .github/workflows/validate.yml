@@ -1,0 +1,49 @@
+name: Validate JSON Data
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'datasets/**.json'
+      - 'schemas/**.json'
+      - 'scripts/validate.sh'
+      - '.github/workflows/validate.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'datasets/**.json'
+      - 'schemas/**.json'
+      - 'scripts/validate.sh'
+      - '.github/workflows/validate.yml'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    name: Validate JSON Schemas and Check Duplicates
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+      
+      - name: Install jq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+      
+      - name: Run validation script
+        run: |
+          chmod +x scripts/validate.sh
+          ./scripts/validate.sh
+      
+      - name: Validation passed
+        if: success()
+        run: echo "✅ All validations passed successfully!"
+
