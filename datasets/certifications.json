@@ -852,7 +852,7 @@
       "id": "cert-ssi-enriched-air-nitrox-40",
       "agency": "agency-ssi",
       "name": "Enriched Air Nitrox 40",
-      "abbr": "EAN40",
+      "abbr": "EANx40",
       "category": "specialty",
       "status": "active",
       "historical_names": ["EANx 32/40"],
