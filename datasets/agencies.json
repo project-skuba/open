@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.skuba.app/schemas/agencies/agencies.schema.v1.0.0.json",
   "meta": {
-    "version": "2025.10.31.1",
-    "generated_at": "2025-10-31T12:00:00Z"
+    "version": "2025.11.03.1",
+    "generated_at": "2025-11-03T12:00:00Z"
   },
   "agencies": [
     {
@@ -304,6 +304,18 @@
       "links": ["https://dan.org/training/"],
       "notes": "Dive safety organization offering emergency oxygen, first aid, and diving safety courses.",
       "updated_at": "2025-10-31T09:00:00Z"
+    },
+    {
+      "id": "agency-firstresponse-ed",
+      "name": "First Response Training International",
+      "abbr": "FRTI",
+      "website": "https://www.firstresponse-ed.com/",
+      "status": "active",
+      "historical_names": [],
+      "regions": ["Global"],
+      "links": ["https://www.firstresponse-ed.com/training-programs/"],
+      "notes": "CPR, First Aid, and emergency care training. OSHA & ILCoR compliant standards.",
+      "updated_at": "2025-11-03T12:00:00Z"
     }
   ]
 }

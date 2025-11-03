@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.skuba.app/schemas/certifications/dive-certifications.schema.v1.0.0.json",
   "meta": {
-    "version": "2025.10.31.1",
-    "generated_at": "2025-10-31T12:00:00Z"
+    "version": "2025.11.03.1",
+    "generated_at": "2025-11-03T12:00:00Z"
   },
   "certifications": [
     {
@@ -15,11 +15,7 @@
       "historical_names": [],
       "prerequisites": {
         "certifications": [],
-        "general": [
-          "Minimum age 10 years",
-          "Medical clearance as required",
-          "Basic swimming ability"
-        ]
+        "general": ["Minimum age 10 years", "Medical clearance as required", "Basic swimming ability"]
       },
       "equivalent_to": ["cert-ssi-scuba-diver", "cert-sdi-scuba-diver"],
       "limits": [
@@ -56,11 +52,7 @@
         "cert-bsac-ocean-diver",
         "cert-cmas-one-star-diver"
       ],
-      "limits": [
-        "Recommended max depth 18 m (60 ft)",
-        "No decompression dives",
-        "No overhead environment"
-      ],
+      "limits": ["Recommended max depth 18 m (60 ft)", "No decompression dives", "No overhead environment"],
       "notes": "Core entry-level certification for autonomous recreational diving within limits.",
       "links": ["https://www.padi.com/courses/open-water-diver"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -114,10 +106,7 @@
         "cert-naui-rescue-diver",
         "cert-bsac-dive-leader"
       ],
-      "limits": [
-        "Not a depth rating",
-        "Focus on problem prevention and management"
-      ],
+      "limits": ["Not a depth rating", "Focus on problem prevention and management"],
       "notes": "Required for many leadership tracks and 'Master' recognition ratings.",
       "links": ["https://www.padi.com/courses/rescue-diver"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -132,15 +121,9 @@
       "historical_names": [],
       "prerequisites": {
         "certifications": ["cert-padi-rescue-diver"],
-        "general": [
-          "Five PADI Specialty Diver certifications",
-          "Minimum 50 logged dives"
-        ]
+        "general": ["Five PADI Specialty Diver certifications", "Minimum 50 logged dives"]
       },
-      "equivalent_to": [
-        "cert-sdi-master-scuba-diver",
-        "cert-naui-master-scuba-diver"
-      ],
+      "equivalent_to": ["cert-sdi-master-scuba-diver", "cert-naui-master-scuba-diver"],
       "limits": ["Recognition rating; no new depth privileges by itself"],
       "notes": "Non-professional recognition of experience and training breadth.",
       "links": ["https://www.padi.com/master-scuba-diver"],
@@ -187,15 +170,8 @@
         "certifications": ["cert-padi-aowd"],
         "general": ["Minimum age 15 years"]
       },
-      "equivalent_to": [
-        "cert-ssi-deep-diving",
-        "cert-sdi-deep-diver",
-        "cert-naui-deep-diver"
-      ],
-      "limits": [
-        "Training to dive to 40 m (130 ft) within recreational limits",
-        "No staged decompression"
-      ],
+      "equivalent_to": ["cert-ssi-deep-diving", "cert-sdi-deep-diver", "cert-naui-deep-diver"],
+      "limits": ["Training to dive to 40 m (130 ft) within recreational limits", "No staged decompression"],
       "notes": "Extends recreational depth training to the 40 m recreational limit.",
       "links": ["https://www.padi.com/courses/deep-diver"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -209,16 +185,8 @@
       "status": "active",
       "historical_names": [],
       "prerequisites": {
-        "certifications": [
-          "cert-padi-aowd",
-          "cert-padi-enriched-air-diver",
-          "cert-padi-deep-diver"
-        ],
-        "general": [
-          "Minimum age 18 years",
-          "Minimum 30 logged dives",
-          "Recent diving activity"
-        ]
+        "certifications": ["cert-padi-aowd", "cert-padi-enriched-air-diver", "cert-padi-deep-diver"],
+        "general": ["Minimum age 18 years", "Minimum 30 logged dives", "Recent diving activity"]
       },
       "equivalent_to": [
         "cert-tdi-advanced-nitrox",
@@ -245,10 +213,7 @@
         "certifications": ["cert-padi-tec-40"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-tdi-decompression-procedures",
-        "cert-raid-deco-40"
-      ],
+      "equivalent_to": ["cert-tdi-decompression-procedures", "cert-raid-deco-40"],
       "limits": [
         "Extended decompression",
         "Use of a single high-O2 decompression gas (often up to 100% O2)",
@@ -270,10 +235,7 @@
         "general": []
       },
       "equivalent_to": ["cert-tdi-extended-range"],
-      "limits": [
-        "Use of two decompression gases",
-        "Deeper/longer staged decompression dives per standards"
-      ],
+      "limits": ["Use of two decompression gases", "Deeper/longer staged decompression dives per standards"],
       "notes": "Completes the core 'tec deep' open circuit sequence before trimix.",
       "links": ["https://www.padi.com/courses/tec-50"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -290,11 +252,7 @@
         "general": []
       },
       "equivalent_to": ["cert-tdi-trimix-diver"],
-      "limits": [
-        "Trimix for dives up to ~65 m (210 ft)",
-        "Helium-based mixes",
-        "Multiple deco gases"
-      ],
+      "limits": ["Trimix for dives up to ~65 m (210 ft)", "Helium-based mixes", "Multiple deco gases"],
       "notes": "Introduces normoxic trimix for deeper OC dives.",
       "links": ["https://www.padi.com/courses/tec-trimix-65"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -310,11 +268,7 @@
         "certifications": ["cert-padi-tec-trimix-65"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-tdi-advanced-trimix-diver",
-        "cert-iantd-advanced-trimix-diver",
-        "cert-gue-tech-2"
-      ],
+      "equivalent_to": ["cert-tdi-advanced-trimix-diver", "cert-iantd-advanced-trimix-diver", "cert-gue-tech-2"],
       "limits": [
         "Full trimix training for very deep dives (commonly cited up to ~90 m/300 ft)",
         "Multiple decompression gases",
@@ -360,14 +314,8 @@
         "certifications": ["cert-padi-tec-40-ccr"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-tdi-ccr-advanced-mixed-gas-diver",
-        "cert-raid-ccr-60"
-      ],
-      "limits": [
-        "Deeper CCR dives with staged decompression",
-        "Helitrox/mixed gas per standards"
-      ],
+      "equivalent_to": ["cert-tdi-ccr-advanced-mixed-gas-diver", "cert-raid-ccr-60"],
+      "limits": ["Deeper CCR dives with staged decompression", "Helitrox/mixed gas per standards"],
       "notes": "Builds on CCR basics for deeper/longer exposures.",
       "links": ["https://www.padi.com/courses/tec-60-ccr"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -383,10 +331,7 @@
         "certifications": ["cert-padi-tec-60-ccr"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-tdi-ccr-advanced-mixed-gas-diver",
-        "cert-iantd-ccr-advanced-mixed-gas"
-      ],
+      "equivalent_to": ["cert-tdi-ccr-advanced-mixed-gas-diver", "cert-iantd-ccr-advanced-mixed-gas"],
       "limits": [
         "Advanced mixed-gas CCR dives with significant decompression obligations",
         "Unit-specific bailout and planning standards"
@@ -413,16 +358,8 @@
           "Medical clearance within 12 months"
         ]
       },
-      "equivalent_to": [
-        "cert-ssi-dive-guide",
-        "cert-sdi-divemaster",
-        "cert-naui-divemaster"
-      ],
-      "limits": [
-        "May supervise certified divers",
-        "May assist with training",
-        "May not conduct courses independently"
-      ],
+      "equivalent_to": ["cert-ssi-dive-guide", "cert-sdi-divemaster", "cert-naui-divemaster"],
+      "limits": ["May supervise certified divers", "May assist with training", "May not conduct courses independently"],
       "notes": "First professional-level rating in PADI system.",
       "links": ["https://www.padi.com/courses/divemaster"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -438,15 +375,8 @@
         "certifications": ["cert-padi-aowd"],
         "general": ["Minimum age 15 years"]
       },
-      "equivalent_to": [
-        "cert-ssi-wreck-diving",
-        "cert-sdi-wreck-diver",
-        "cert-naui-wreck-diver"
-      ],
-      "limits": [
-        "External wreck exploration",
-        "Limited penetration within daylight zone"
-      ],
+      "equivalent_to": ["cert-ssi-wreck-diving", "cert-sdi-wreck-diver", "cert-naui-wreck-diver"],
+      "limits": ["External wreck exploration", "Limited penetration within daylight zone"],
       "notes": "Covers wreck diving techniques, hazards, and marine archaeology ethics.",
       "links": ["https://www.padi.com/courses/wreck-diver"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -463,11 +393,7 @@
         "certifications": ["cert-padi-owd"],
         "general": ["Minimum age 10 years"]
       },
-      "equivalent_to": [
-        "cert-ssi-navigation",
-        "cert-sdi-underwater-navigation",
-        "cert-naui-navigation"
-      ],
+      "equivalent_to": ["cert-ssi-navigation", "cert-sdi-underwater-navigation", "cert-naui-navigation"],
       "limits": [],
       "notes": "Natural navigation and compass navigation techniques.",
       "links": ["https://www.padi.com/courses/underwater-navigator"],
@@ -506,10 +432,7 @@
         "certifications": ["cert-padi-owd"],
         "general": ["Minimum age 12 years"]
       },
-      "equivalent_to": [
-        "cert-ssi-waves-tides-currents",
-        "cert-sdi-drift-diver"
-      ],
+      "equivalent_to": ["cert-ssi-waves-tides-currents", "cert-sdi-drift-diver"],
       "limits": [],
       "notes": "Techniques for diving in currents.",
       "links": ["https://www.padi.com/courses/drift-diver"],
@@ -562,10 +485,7 @@
         "certifications": ["cert-padi-owd"],
         "general": ["Minimum age 10 years"]
       },
-      "equivalent_to": [
-        "cert-ssi-photo-video",
-        "cert-sdi-underwater-photographer"
-      ],
+      "equivalent_to": ["cert-ssi-photo-video", "cert-sdi-underwater-photographer"],
       "limits": [],
       "notes": "Digital underwater photography principles and techniques.",
       "links": ["https://www.padi.com/courses/underwater-photographer"],
@@ -582,11 +502,7 @@
         "certifications": ["cert-padi-owd"],
         "general": ["Minimum age 15 years"]
       },
-      "equivalent_to": [
-        "cert-ssi-sidemount-diving",
-        "cert-sdi-sidemount-diver",
-        "cert-tdi-sidemount-diver"
-      ],
+      "equivalent_to": ["cert-ssi-sidemount-diving", "cert-sdi-sidemount-diver", "cert-tdi-sidemount-diver"],
       "limits": [],
       "notes": "Sidemount configuration and techniques for open water.",
       "links": ["https://www.padi.com/courses/sidemount-diver"],
@@ -744,11 +660,7 @@
       "historical_names": [],
       "prerequisites": {
         "certifications": [],
-        "general": [
-          "Minimum age 10 years",
-          "Basic swimming ability",
-          "Medical clearance as required"
-        ]
+        "general": ["Minimum age 10 years", "Basic swimming ability", "Medical clearance as required"]
       },
       "equivalent_to": ["cert-padi-scuba-diver", "cert-sdi-scuba-diver"],
       "limits": [
@@ -758,9 +670,7 @@
         "No decompression dives"
       ],
       "notes": "Entry-level subset of Open Water; upgrade path to OWD.",
-      "links": [
-        "https://www.divessi.com/en/certifications/scuba-diving/scuba-diver"
-      ],
+      "links": ["https://www.divessi.com/en/certifications/scuba-diving/scuba-diver"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -773,11 +683,7 @@
       "historical_names": [],
       "prerequisites": {
         "certifications": [],
-        "general": [
-          "Minimum age 10 years",
-          "Basic swimming ability",
-          "Medical clearance as required"
-        ]
+        "general": ["Minimum age 10 years", "Basic swimming ability", "Medical clearance as required"]
       },
       "equivalent_to": [
         "cert-padi-owd",
@@ -786,15 +692,9 @@
         "cert-bsac-ocean-diver",
         "cert-cmas-one-star-diver"
       ],
-      "limits": [
-        "Recommended max depth 18 m (60 ft)",
-        "No decompression dives",
-        "No overhead environment"
-      ],
+      "limits": ["Recommended max depth 18 m (60 ft)", "No decompression dives", "No overhead environment"],
       "notes": "SSI core entry-level certification.",
-      "links": [
-        "https://www.divessi.com/en/certifications/scuba-diving/open-water-diver-1923"
-      ],
+      "links": ["https://www.divessi.com/en/certifications/scuba-diving/open-water-diver-1923"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -814,14 +714,9 @@
         "cert-naui-advanced-scuba-diver",
         "cert-bsac-sports-diver"
       ],
-      "limits": [
-        "Recommended max depth 30 m (100 ft) with Deep Adventure dive",
-        "No decompression dives"
-      ],
+      "limits": ["Recommended max depth 30 m (100 ft) with Deep Adventure dive", "No decompression dives"],
       "notes": "SSI's structured sampler leading toward specialties and higher training.",
-      "links": [
-        "https://www.divessi.com/en/certifications/scuba-diving/advanced-adventurer-2012"
-      ],
+      "links": ["https://www.divessi.com/en/certifications/scuba-diving/advanced-adventurer-2012"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -836,16 +731,10 @@
         "certifications": ["cert-ssi-advanced-adventurer"],
         "general": ["Current first aid/CPR/O2 provider"]
       },
-      "equivalent_to": [
-        "cert-padi-rescue-diver",
-        "cert-sdi-rescue-diver",
-        "cert-naui-rescue-diver"
-      ],
+      "equivalent_to": ["cert-padi-rescue-diver", "cert-sdi-rescue-diver", "cert-naui-rescue-diver"],
       "limits": ["Not a depth rating", "Focus on prevention and management"],
       "notes": "Core rescue-level training; prerequisite for SSI leadership tracks.",
-      "links": [
-        "https://www.divessi.com/en/certifications/scuba-diving/stress-rescue-2004"
-      ],
+      "links": ["https://www.divessi.com/en/certifications/scuba-diving/stress-rescue-2004"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -873,9 +762,7 @@
         "No decompression unless otherwise qualified"
       ],
       "notes": "Core specialty for longer no-stop times.",
-      "links": [
-        "https://www.divessi.com/en/certifications/scuba-diving/enriched-air-nitrox-40-2021"
-      ],
+      "links": ["https://www.divessi.com/en/certifications/scuba-diving/enriched-air-nitrox-40-2021"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
 
@@ -889,21 +776,12 @@
       "historical_names": [],
       "prerequisites": {
         "certifications": ["cert-ssi-diver-stress-and-rescue"],
-        "general": [
-          "Four SSI Specialty certifications",
-          "Minimum 50 logged dives"
-        ]
+        "general": ["Four SSI Specialty certifications", "Minimum 50 logged dives"]
       },
-      "equivalent_to": [
-        "cert-padi-master-scuba-diver",
-        "cert-sdi-master-scuba-diver",
-        "cert-naui-master-scuba-diver"
-      ],
+      "equivalent_to": ["cert-padi-master-scuba-diver", "cert-sdi-master-scuba-diver", "cert-naui-master-scuba-diver"],
       "limits": ["Recognition rating; no additional depth privileges"],
       "notes": "SSI's highest non-professional recognition level.",
-      "links": [
-        "https://www.divessi.com/en/certifications/scuba-diving/master-diver"
-      ],
+      "links": ["https://www.divessi.com/en/certifications/scuba-diving/master-diver"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -915,18 +793,12 @@
       "historical_names": [],
       "prerequisites": {
         "certifications": ["cert-ssi-diver-stress-and-rescue"],
-        "general": [
-          "Minimum age 18 years",
-          "Minimum 40 logged dives",
-          "Science of Diving or equivalent"
-        ]
+        "general": ["Minimum age 18 years", "Minimum 40 logged dives", "Science of Diving or equivalent"]
       },
       "equivalent_to": ["cert-padi-divemaster", "cert-sdi-divemaster"],
       "limits": ["May guide certified divers", "May assist instructors"],
       "notes": "SSI professional-level certification.",
-      "links": [
-        "https://www.divessi.com/en/certifications/scuba-diving/dive-guide"
-      ],
+      "links": ["https://www.divessi.com/en/certifications/scuba-diving/dive-guide"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -944,9 +816,7 @@
       "equivalent_to": ["cert-padi-deep-diver", "cert-sdi-deep-diver"],
       "limits": [],
       "notes": "Training to 40 m (130 ft) within recreational limits.",
-      "links": [
-        "https://www.divessi.com/en/certifications/scuba-diving/deep-diving"
-      ],
+      "links": ["https://www.divessi.com/en/certifications/scuba-diving/deep-diving"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -964,9 +834,7 @@
       "equivalent_to": ["cert-padi-wreck-diver", "cert-sdi-wreck-diver"],
       "limits": [],
       "notes": "External wreck exploration and limited penetration.",
-      "links": [
-        "https://www.divessi.com/en/certifications/scuba-diving/wreck-diving"
-      ],
+      "links": ["https://www.divessi.com/en/certifications/scuba-diving/wreck-diving"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -981,15 +849,10 @@
         "certifications": ["cert-ssi-open-water-diver"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-padi-night-diver",
-        "cert-sdi-night-limited-visibility"
-      ],
+      "equivalent_to": ["cert-padi-night-diver", "cert-sdi-night-limited-visibility"],
       "limits": [],
       "notes": "Night diving and low visibility techniques.",
-      "links": [
-        "https://www.divessi.com/en/certifications/scuba-diving/night-limited-visibility"
-      ],
+      "links": ["https://www.divessi.com/en/certifications/scuba-diving/night-limited-visibility"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -1003,15 +866,10 @@
         "certifications": ["cert-ssi-open-water-diver"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-padi-underwater-navigator",
-        "cert-sdi-underwater-navigation"
-      ],
+      "equivalent_to": ["cert-padi-underwater-navigator", "cert-sdi-underwater-navigation"],
       "limits": [],
       "notes": "Compass and natural navigation techniques.",
-      "links": [
-        "https://www.divessi.com/en/certifications/scuba-diving/navigation"
-      ],
+      "links": ["https://www.divessi.com/en/certifications/scuba-diving/navigation"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -1026,15 +884,10 @@
         "certifications": ["cert-ssi-open-water-diver"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-padi-search-and-recovery",
-        "cert-sdi-search-recovery"
-      ],
+      "equivalent_to": ["cert-padi-search-and-recovery", "cert-sdi-search-recovery"],
       "limits": [],
       "notes": "Search patterns and object recovery techniques.",
-      "links": [
-        "https://www.divessi.com/en/certifications/scuba-diving/search-recovery"
-      ],
+      "links": ["https://www.divessi.com/en/certifications/scuba-diving/search-recovery"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -1049,15 +902,10 @@
         "certifications": ["cert-ssi-open-water-diver"],
         "general": ["Minimum age 15 years"]
       },
-      "equivalent_to": [
-        "cert-padi-sidemount-diver",
-        "cert-sdi-sidemount-diver"
-      ],
+      "equivalent_to": ["cert-padi-sidemount-diver", "cert-sdi-sidemount-diver"],
       "limits": [],
       "notes": "Sidemount configuration for open water.",
-      "links": [
-        "https://www.divessi.com/en/certifications/scuba-diving/sidemount-diving"
-      ],
+      "links": ["https://www.divessi.com/en/certifications/scuba-diving/sidemount-diving"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -1075,9 +923,7 @@
       "equivalent_to": ["cert-padi-peak-performance-buoyancy"],
       "limits": [],
       "notes": "Advanced buoyancy control and trim techniques.",
-      "links": [
-        "https://www.divessi.com/en/certifications/scuba-diving/perfect-buoyancy"
-      ],
+      "links": ["https://www.divessi.com/en/certifications/scuba-diving/perfect-buoyancy"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -1095,9 +941,7 @@
       "equivalent_to": ["cert-padi-dry-suit-diver", "cert-sdi-dry-suit-diver"],
       "limits": [],
       "notes": "Dry suit techniques and maintenance.",
-      "links": [
-        "https://www.divessi.com/en/certifications/scuba-diving/dry-suit-diving"
-      ],
+      "links": ["https://www.divessi.com/en/certifications/scuba-diving/dry-suit-diving"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -1112,15 +956,10 @@
         "certifications": ["cert-ssi-open-water-diver"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-padi-underwater-photographer",
-        "cert-padi-underwater-videographer"
-      ],
+      "equivalent_to": ["cert-padi-underwater-photographer", "cert-padi-underwater-videographer"],
       "limits": [],
       "notes": "Underwater photography and videography.",
-      "links": [
-        "https://www.divessi.com/en/certifications/scuba-diving/photo-video"
-      ],
+      "links": ["https://www.divessi.com/en/certifications/scuba-diving/photo-video"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -1138,9 +977,7 @@
       "equivalent_to": ["cert-padi-drift-diver"],
       "limits": [],
       "notes": "Understanding and diving in dynamic water conditions.",
-      "links": [
-        "https://www.divessi.com/en/certifications/scuba-diving/waves-tides-currents"
-      ],
+      "links": ["https://www.divessi.com/en/certifications/scuba-diving/waves-tides-currents"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
 
@@ -1154,11 +991,7 @@
       "historical_names": [],
       "prerequisites": {
         "certifications": [],
-        "general": [
-          "Minimum age 10 years",
-          "Basic swimming ability",
-          "Medical clearance as required"
-        ]
+        "general": ["Minimum age 10 years", "Basic swimming ability", "Medical clearance as required"]
       },
       "equivalent_to": ["cert-padi-scuba-diver", "cert-ssi-scuba-diver"],
       "limits": [
@@ -1181,11 +1014,7 @@
       "historical_names": ["Open Water Diver"],
       "prerequisites": {
         "certifications": [],
-        "general": [
-          "Minimum age 10 years",
-          "Basic swimming ability",
-          "Medical clearance as required"
-        ]
+        "general": ["Minimum age 10 years", "Basic swimming ability", "Medical clearance as required"]
       },
       "equivalent_to": [
         "cert-padi-owd",
@@ -1194,14 +1023,9 @@
         "cert-bsac-ocean-diver",
         "cert-cmas-one-star-diver"
       ],
-      "limits": [
-        "Recommended max depth 18 m (60 ft)",
-        "No decompression dives"
-      ],
+      "limits": ["Recommended max depth 18 m (60 ft)", "No decompression dives"],
       "notes": "Recreational entry-level certification within International Training.",
-      "links": [
-        "https://www.tdisdi.com/sdi/get-certified/open-water-scuba-diver/"
-      ],
+      "links": ["https://www.tdisdi.com/sdi/get-certified/open-water-scuba-diver/"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -1215,19 +1039,10 @@
         "certifications": ["cert-sdi-open-water-scuba-diver"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-padi-aowd",
-        "cert-ssi-advanced-adventurer",
-        "cert-naui-advanced-scuba-diver"
-      ],
-      "limits": [
-        "Recommended max depth 30 m (100 ft) with deep module",
-        "No decompression dives"
-      ],
+      "equivalent_to": ["cert-padi-aowd", "cert-ssi-advanced-adventurer", "cert-naui-advanced-scuba-diver"],
+      "limits": ["Recommended max depth 30 m (100 ft) with deep module", "No decompression dives"],
       "notes": "Sample of specialties; stepping stone toward Rescue.",
-      "links": [
-        "https://www.tdisdi.com/sdi/get-certified/advanced-adventure-diver/"
-      ],
+      "links": ["https://www.tdisdi.com/sdi/get-certified/advanced-adventure-diver/"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -1242,11 +1057,7 @@
         "certifications": ["cert-sdi-advanced-adventure-diver"],
         "general": ["Current first aid/CPR/O2 provider"]
       },
-      "equivalent_to": [
-        "cert-padi-rescue-diver",
-        "cert-ssi-diver-stress-and-rescue",
-        "cert-naui-rescue-diver"
-      ],
+      "equivalent_to": ["cert-padi-rescue-diver", "cert-ssi-diver-stress-and-rescue", "cert-naui-rescue-diver"],
       "limits": ["Not a depth rating"],
       "notes": "Core rescue-level training for SDI path.",
       "links": ["https://www.tdisdi.com/sdi/get-certified/rescue-diver/"],
@@ -1264,10 +1075,7 @@
         "certifications": ["cert-sdi-rescue-diver"],
         "general": ["Four SDI specialties", "Minimum 50 logged dives"]
       },
-      "equivalent_to": [
-        "cert-padi-master-scuba-diver",
-        "cert-naui-master-scuba-diver"
-      ],
+      "equivalent_to": ["cert-padi-master-scuba-diver", "cert-naui-master-scuba-diver"],
       "limits": ["Recognition; no additional depth privileges"],
       "notes": "Experience recognition rating.",
       "links": ["https://www.tdisdi.com/sdi/get-certified/master-scuba-diver/"],
@@ -1290,10 +1098,7 @@
         "cert-naui-nitrox-diver",
         "cert-tdi-nitrox-diver"
       ],
-      "limits": [
-        "Nitrox use per training (commonly up to 40% O2)",
-        "Plan PPO2 within agency recommendations"
-      ],
+      "limits": ["Nitrox use per training (commonly up to 40% O2)", "Plan PPO2 within agency recommendations"],
       "notes": "Nitrox planning and use focused on dive computers.",
       "links": ["https://www.tdisdi.com/sdi/get-certified/computer-nitrox/"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -1309,11 +1114,7 @@
       "historical_names": [],
       "prerequisites": {
         "certifications": ["cert-sdi-rescue-diver"],
-        "general": [
-          "Minimum age 18 years",
-          "Minimum 40 logged dives",
-          "Current CPR/First Aid"
-        ]
+        "general": ["Minimum age 18 years", "Minimum 40 logged dives", "Current CPR/First Aid"]
       },
       "equivalent_to": ["cert-padi-divemaster", "cert-ssi-dive-guide"],
       "limits": ["May supervise certified divers", "May assist with training"],
@@ -1367,15 +1168,10 @@
         "certifications": ["cert-sdi-open-water-scuba-diver"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-padi-night-diver",
-        "cert-ssi-night-limited-visibility"
-      ],
+      "equivalent_to": ["cert-padi-night-diver", "cert-ssi-night-limited-visibility"],
       "limits": [],
       "notes": "Night diving techniques.",
-      "links": [
-        "https://www.tdisdi.com/sdi/get-certified/night-limited-visibility/"
-      ],
+      "links": ["https://www.tdisdi.com/sdi/get-certified/night-limited-visibility/"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -1390,15 +1186,10 @@
         "certifications": ["cert-sdi-open-water-scuba-diver"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-padi-underwater-navigator",
-        "cert-ssi-navigation"
-      ],
+      "equivalent_to": ["cert-padi-underwater-navigator", "cert-ssi-navigation"],
       "limits": [],
       "notes": "Navigation techniques.",
-      "links": [
-        "https://www.tdisdi.com/sdi/get-certified/underwater-navigation/"
-      ],
+      "links": ["https://www.tdisdi.com/sdi/get-certified/underwater-navigation/"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -1413,10 +1204,7 @@
         "certifications": ["cert-sdi-open-water-scuba-diver"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-padi-search-and-recovery",
-        "cert-ssi-search-recovery"
-      ],
+      "equivalent_to": ["cert-padi-search-and-recovery", "cert-ssi-search-recovery"],
       "limits": [],
       "notes": "Search and recovery techniques.",
       "links": ["https://www.tdisdi.com/sdi/get-certified/search-recovery/"],
@@ -1433,10 +1221,7 @@
         "certifications": ["cert-sdi-open-water-scuba-diver"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-padi-sidemount-diver",
-        "cert-ssi-sidemount-diving"
-      ],
+      "equivalent_to": ["cert-padi-sidemount-diver", "cert-ssi-sidemount-diving"],
       "limits": [],
       "notes": "Sidemount configuration for open water.",
       "links": ["https://www.tdisdi.com/sdi/get-certified/sidemount-diver/"],
@@ -1490,9 +1275,7 @@
       "equivalent_to": ["cert-padi-underwater-photographer"],
       "limits": [],
       "notes": "Underwater photography techniques.",
-      "links": [
-        "https://www.tdisdi.com/sdi/get-certified/underwater-photographer/"
-      ],
+      "links": ["https://www.tdisdi.com/sdi/get-certified/underwater-photographer/"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
 
@@ -1508,9 +1291,7 @@
         "general": ["Buoyancy and equipment proficiency per standards"]
       },
       "equivalent_to": ["cert-raid-intro-to-tech", "cert-iantd-intro-to-tech"],
-      "limits": [
-        "Skills-focused; does not grant decompression privileges by itself"
-      ],
+      "limits": ["Skills-focused; does not grant decompression privileges by itself"],
       "notes": "Foundational skills for technical diving equipment and procedures.",
       "links": ["https://www.tdisdi.com/tdi/get-certified/intro-to-tech/"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -1532,19 +1313,13 @@
           "Experience prerequisites per standards"
         ]
       },
-      "equivalent_to": [
-        "cert-padi-tec-40",
-        "cert-raid-deco-40",
-        "cert-iantd-advanced-nitrox-diver"
-      ],
+      "equivalent_to": ["cert-padi-tec-40", "cert-raid-deco-40", "cert-iantd-advanced-nitrox-diver"],
       "limits": [
         "Use of EANx > 40% up to pure O2 for accelerated decompression when combined with DP",
         "No staged decompression unless combined with DP"
       ],
       "notes": "Often paired with Decompression Procedures.",
-      "links": [
-        "https://www.tdisdi.com/tdi/get-certified/advanced-nitrox-diver/"
-      ],
+      "links": ["https://www.tdisdi.com/tdi/get-certified/advanced-nitrox-diver/"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -1560,14 +1335,9 @@
         "general": ["Deep training/experience per standards"]
       },
       "equivalent_to": ["cert-padi-tec-45", "cert-raid-deco-40"],
-      "limits": [
-        "Staged decompression dives within training limits",
-        "One or more deco gases per standards"
-      ],
+      "limits": ["Staged decompression dives within training limits", "One or more deco gases per standards"],
       "notes": "Teaches staged decompression planning and execution. Often combined with Advanced Nitrox as AN/DP.",
-      "links": [
-        "https://www.tdisdi.com/tdi/get-certified/decompression-procedures-diver/"
-      ],
+      "links": ["https://www.tdisdi.com/tdi/get-certified/decompression-procedures-diver/"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -1579,21 +1349,13 @@
       "status": "active",
       "historical_names": [],
       "prerequisites": {
-        "certifications": [
-          "cert-tdi-advanced-nitrox",
-          "cert-tdi-decompression-procedures"
-        ],
+        "certifications": ["cert-tdi-advanced-nitrox", "cert-tdi-decompression-procedures"],
         "general": []
       },
       "equivalent_to": ["cert-padi-tec-50"],
-      "limits": [
-        "Air/nitrox to deeper ranges with staged decompression",
-        "Multiple deco gases per standards"
-      ],
+      "limits": ["Air/nitrox to deeper ranges with staged decompression", "Multiple deco gases per standards"],
       "notes": "Culmination of AN/DP path prior to trimix.",
-      "links": [
-        "https://www.tdisdi.com/tdi/get-certified/extended-range-diver/"
-      ],
+      "links": ["https://www.tdisdi.com/tdi/get-certified/extended-range-diver/"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -1608,11 +1370,7 @@
         "certifications": ["cert-tdi-extended-range"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-padi-tec-trimix-65",
-        "cert-raid-trimix-1",
-        "cert-iantd-normoxic-trimix-diver"
-      ],
+      "equivalent_to": ["cert-padi-tec-trimix-65", "cert-raid-trimix-1", "cert-iantd-normoxic-trimix-diver"],
       "limits": ["Normoxic trimix within standards", "Multiple deco gases"],
       "notes": "First level trimix for deeper dives with helium to manage narcosis.",
       "links": ["https://www.tdisdi.com/tdi/get-certified/trimix-diver/"],
@@ -1630,19 +1388,10 @@
         "certifications": ["cert-tdi-trimix-diver"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-padi-tec-trimix-diver",
-        "cert-iantd-advanced-trimix-diver",
-        "cert-raid-trimix-2"
-      ],
-      "limits": [
-        "Hypoxic trimix per standards for very deep dives",
-        "Multiple deco gases, complex staging"
-      ],
+      "equivalent_to": ["cert-padi-tec-trimix-diver", "cert-iantd-advanced-trimix-diver", "cert-raid-trimix-2"],
+      "limits": ["Hypoxic trimix per standards for very deep dives", "Multiple deco gases, complex staging"],
       "notes": "Highest OC trimix level in many systems.",
-      "links": [
-        "https://www.tdisdi.com/tdi/get-certified/advanced-trimix-diver/"
-      ],
+      "links": ["https://www.tdisdi.com/tdi/get-certified/advanced-trimix-diver/"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
 
@@ -1656,21 +1405,12 @@
       "historical_names": [],
       "prerequisites": {
         "certifications": [],
-        "general": [
-          "Minimum age 18 years",
-          "Recreational prerequisites per standards",
-          "Unit-specific requirements"
-        ]
+        "general": ["Minimum age 18 years", "Recreational prerequisites per standards", "Unit-specific requirements"]
       },
       "equivalent_to": ["cert-padi-tec-40-ccr", "cert-raid-ccr-40"],
-      "limits": [
-        "Unit-specific CCR training with air/nitrox diluent",
-        "Bailout and emergency procedures"
-      ],
+      "limits": ["Unit-specific CCR training with air/nitrox diluent", "Bailout and emergency procedures"],
       "notes": "Entry-level CCR unit-specific qualification.",
-      "links": [
-        "https://www.tdisdi.com/tdi/get-certified/ccr-air-diluent-diver/"
-      ],
+      "links": ["https://www.tdisdi.com/tdi/get-certified/ccr-air-diluent-diver/"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
 
@@ -1686,15 +1426,8 @@
         "certifications": [],
         "general": ["Open Water Diver or equivalent"]
       },
-      "equivalent_to": [
-        "cert-padi-enriched-air-diver",
-        "cert-ssi-enriched-air-nitrox-40",
-        "cert-sdi-computer-nitrox"
-      ],
-      "limits": [
-        "Nitrox up to 40% O2",
-        "No decompression unless otherwise qualified"
-      ],
+      "equivalent_to": ["cert-padi-enriched-air-diver", "cert-ssi-enriched-air-nitrox-40", "cert-sdi-computer-nitrox"],
+      "limits": ["Nitrox up to 40% O2", "No decompression unless otherwise qualified"],
       "notes": "Basic nitrox certification for recreational diving.",
       "links": ["https://www.tdisdi.com/tdi/get-certified/nitrox-diver/"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -1709,17 +1442,10 @@
       "historical_names": [],
       "prerequisites": {
         "certifications": [],
-        "general": [
-          "Advanced-level recreational certification",
-          "Nitrox certification",
-          "Experience per standards"
-        ]
+        "general": ["Advanced-level recreational certification", "Nitrox certification", "Experience per standards"]
       },
       "equivalent_to": [],
-      "limits": [
-        "Helium-based mixes for narcosis management",
-        "Limited decompression within training"
-      ],
+      "limits": ["Helium-based mixes for narcosis management", "Limited decompression within training"],
       "notes": "Entry-level helium diving without full trimix commitment.",
       "links": ["https://www.tdisdi.com/tdi/get-certified/helitrox-diver/"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -1733,21 +1459,10 @@
       "historical_names": [],
       "prerequisites": {
         "certifications": [],
-        "general": [
-          "Advanced-level recreational certification",
-          "Good buoyancy control"
-        ]
+        "general": ["Advanced-level recreational certification", "Good buoyancy control"]
       },
-      "equivalent_to": [
-        "cert-nsscds-cavern-diver",
-        "cert-iantd-cavern-diver",
-        "cert-raid-cavern-diver"
-      ],
-      "limits": [
-        "Daylight zone only",
-        "Linear penetration limits",
-        "No decompression unless otherwise qualified"
-      ],
+      "equivalent_to": ["cert-nsscds-cavern-diver", "cert-iantd-cavern-diver", "cert-raid-cavern-diver"],
+      "limits": ["Daylight zone only", "Linear penetration limits", "No decompression unless otherwise qualified"],
       "notes": "First step in overhead environment training.",
       "links": ["https://www.tdisdi.com/tdi/get-certified/cavern-diver/"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -1786,15 +1501,8 @@
         "certifications": ["cert-tdi-intro-to-cave-diver"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-nsscds-full-cave-diver",
-        "cert-iantd-cave-diver",
-        "cert-raid-cave-2"
-      ],
-      "limits": [
-        "Complex navigation permitted",
-        "Stages and decompression if separately qualified"
-      ],
+      "equivalent_to": ["cert-nsscds-full-cave-diver", "cert-iantd-cave-diver", "cert-raid-cave-2"],
+      "limits": ["Complex navigation permitted", "Stages and decompression if separately qualified"],
       "notes": "Highest cave qualification in TDI system.",
       "links": ["https://www.tdisdi.com/tdi/get-certified/full-cave-diver/"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -1810,11 +1518,7 @@
         "certifications": [],
         "general": ["Open Water Diver or equivalent"]
       },
-      "equivalent_to": [
-        "cert-padi-sidemount-diver",
-        "cert-ssi-sidemount-diving",
-        "cert-sdi-sidemount-diver"
-      ],
+      "equivalent_to": ["cert-padi-sidemount-diver", "cert-ssi-sidemount-diving", "cert-sdi-sidemount-diver"],
       "limits": [],
       "notes": "Sidemount configuration for technical and cave diving.",
       "links": ["https://www.tdisdi.com/tdi/get-certified/sidemount-diver/"],
@@ -1852,9 +1556,7 @@
       "equivalent_to": [],
       "limits": [],
       "notes": "Limited penetration and wreck exploration beyond recreational limits.",
-      "links": [
-        "https://www.tdisdi.com/tdi/get-certified/advanced-wreck-diver/"
-      ],
+      "links": ["https://www.tdisdi.com/tdi/get-certified/advanced-wreck-diver/"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -1887,21 +1589,10 @@
         "certifications": ["cert-tdi-ccr-helitrox-diver"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-padi-tec-60-ccr",
-        "cert-padi-tec-100-ccr",
-        "cert-raid-ccr-60",
-        "cert-raid-ccr-100"
-      ],
-      "limits": [
-        "Advanced trimix CCR diving",
-        "Complex decompression",
-        "Unit-specific"
-      ],
+      "equivalent_to": ["cert-padi-tec-60-ccr", "cert-padi-tec-100-ccr", "cert-raid-ccr-60", "cert-raid-ccr-100"],
+      "limits": ["Advanced trimix CCR diving", "Complex decompression", "Unit-specific"],
       "notes": "Highest level CCR certification in TDI system.",
-      "links": [
-        "https://www.tdisdi.com/tdi/get-certified/ccr-advanced-mixed-gas-diver/"
-      ],
+      "links": ["https://www.tdisdi.com/tdi/get-certified/ccr-advanced-mixed-gas-diver/"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
 
@@ -1923,10 +1614,7 @@
         "cert-sdi-open-water-scuba-diver",
         "cert-bsac-ocean-diver"
       ],
-      "limits": [
-        "Autonomous within training and local regulations",
-        "Typical depth 20 m (national variations)"
-      ],
+      "limits": ["Autonomous within training and local regulations", "Typical depth 20 m (national variations)"],
       "notes": "Issued through national federations; limits may vary by federation.",
       "links": ["https://www.cmas.org/"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -1943,11 +1631,7 @@
         "certifications": ["cert-cmas-one-star-diver"],
         "general": ["Experience per federation"]
       },
-      "equivalent_to": [
-        "cert-padi-aowd",
-        "cert-ssi-advanced-adventurer",
-        "cert-sdi-advanced-adventure-diver"
-      ],
+      "equivalent_to": ["cert-padi-aowd", "cert-ssi-advanced-adventurer", "cert-sdi-advanced-adventure-diver"],
       "limits": [
         "Extended depth training (often to ~30 m)",
         "No decompression (unless local federation standards allow training exposures)"
@@ -1968,13 +1652,8 @@
         "certifications": ["cert-cmas-two-star-diver"],
         "general": ["Rescue/leadership skills per federation"]
       },
-      "equivalent_to": [
-        "cert-naui-master-scuba-diver",
-        "cert-bsac-dive-leader"
-      ],
-      "limits": [
-        "Leadership-level recreational diving within federation rules"
-      ],
+      "equivalent_to": ["cert-naui-master-scuba-diver", "cert-bsac-dive-leader"],
+      "limits": ["Leadership-level recreational diving within federation rules"],
       "notes": "Experienced diver grade; not an instructor but high competency.",
       "links": ["https://www.cmas.org/"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -2009,15 +1688,8 @@
         "certifications": [],
         "general": ["Club membership", "Training prerequisites per BSAC"]
       },
-      "equivalent_to": [
-        "cert-padi-owd",
-        "cert-ssi-open-water-diver",
-        "cert-sdi-open-water-scuba-diver"
-      ],
-      "limits": [
-        "Typical depth 20 m (66 ft) after progression",
-        "No decompression dives"
-      ],
+      "equivalent_to": ["cert-padi-owd", "cert-ssi-open-water-diver", "cert-sdi-open-water-scuba-diver"],
+      "limits": ["Typical depth 20 m (66 ft) after progression", "No decompression dives"],
       "notes": "Club-based initial qualification in the BSAC system.",
       "links": ["https://www.bsac.com/training/learn-to-dive/ocean-diver/"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -2074,9 +1746,7 @@
       "equivalent_to": [],
       "limits": ["Extended depth and experience"],
       "notes": "BSAC advanced recreational level.",
-      "links": [
-        "https://www.bsac.com/training/grow-your-skills/advanced-diver/"
-      ],
+      "links": ["https://www.bsac.com/training/grow-your-skills/advanced-diver/"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -2093,9 +1763,7 @@
       "equivalent_to": [],
       "limits": ["High-level recreational and technical skills"],
       "notes": "BSAC's highest non-leadership diver grade.",
-      "links": [
-        "https://www.bsac.com/training/grow-your-skills/first-class-diver/"
-      ],
+      "links": ["https://www.bsac.com/training/grow-your-skills/first-class-diver/"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
 
@@ -2127,20 +1795,10 @@
       "historical_names": [],
       "prerequisites": {
         "certifications": ["cert-gue-fundamentals"],
-        "general": [
-          "GUE Fundamentals passed at tech rating",
-          "Experience prerequisites per GUE"
-        ]
+        "general": ["GUE Fundamentals passed at tech rating", "Experience prerequisites per GUE"]
       },
-      "equivalent_to": [
-        "cert-tdi-advanced-nitrox",
-        "cert-tdi-decompression-procedures",
-        "cert-padi-tec-45"
-      ],
-      "limits": [
-        "Helitrox/trimix as per course standards",
-        "Staged decompression within course limits"
-      ],
+      "equivalent_to": ["cert-tdi-advanced-nitrox", "cert-tdi-decompression-procedures", "cert-padi-tec-45"],
+      "limits": ["Helitrox/trimix as per course standards", "Staged decompression within course limits"],
       "notes": "Standardized team-protocol technical course.",
       "links": ["https://www.gue.com/training/technical/gue-tech-1"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -2157,14 +1815,8 @@
         "certifications": ["cert-gue-tech-1"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-tdi-advanced-trimix-diver",
-        "cert-padi-tec-trimix-diver"
-      ],
-      "limits": [
-        "Hypoxic trimix dives within course limits",
-        "Multiple deco gases"
-      ],
+      "equivalent_to": ["cert-tdi-advanced-trimix-diver", "cert-padi-tec-trimix-diver"],
+      "limits": ["Hypoxic trimix dives within course limits", "Multiple deco gases"],
       "notes": "Advanced team-based helium diving.",
       "links": ["https://www.gue.com/training/technical/gue-tech-2"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -2185,9 +1837,7 @@
       "equivalent_to": ["cert-padi-owd"],
       "limits": ["Recreational limits within GUE standards"],
       "notes": "GUE's entry-level recreational certification with standardized equipment configuration.",
-      "links": [
-        "https://www.gue.com/training/recreational/recreational-diver-1"
-      ],
+      "links": ["https://www.gue.com/training/recreational/recreational-diver-1"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -2205,9 +1855,7 @@
       "equivalent_to": ["cert-padi-aowd"],
       "limits": ["Extended depth training within GUE recreational standards"],
       "notes": "GUE advanced recreational level.",
-      "links": [
-        "https://www.gue.com/training/recreational/recreational-diver-2"
-      ],
+      "links": ["https://www.gue.com/training/recreational/recreational-diver-2"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -2225,9 +1873,7 @@
       "equivalent_to": [],
       "limits": ["Advanced recreational diving with GUE protocols"],
       "notes": "Highest GUE recreational level.",
-      "links": [
-        "https://www.gue.com/training/recreational/recreational-diver-3"
-      ],
+      "links": ["https://www.gue.com/training/recreational/recreational-diver-3"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -2241,15 +1887,8 @@
         "certifications": ["cert-gue-fundamentals"],
         "general": ["GUE Fundamentals passed at tech rating"]
       },
-      "equivalent_to": [
-        "cert-tdi-intro-to-cave-diver",
-        "cert-nsscds-intro-to-cave-diver"
-      ],
-      "limits": [
-        "Limited cave penetration",
-        "Simple navigation",
-        "Single tanks or stages per standards"
-      ],
+      "equivalent_to": ["cert-tdi-intro-to-cave-diver", "cert-nsscds-intro-to-cave-diver"],
+      "limits": ["Limited cave penetration", "Simple navigation", "Single tanks or stages per standards"],
       "notes": "GUE's standardized cave training level 1.",
       "links": ["https://www.gue.com/training/cave/cave-1"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -2266,15 +1905,8 @@
         "certifications": ["cert-gue-cave-1"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-tdi-full-cave-diver",
-        "cert-nsscds-full-cave-diver"
-      ],
-      "limits": [
-        "Complex navigation",
-        "Multiple stages",
-        "DPV use per standards"
-      ],
+      "equivalent_to": ["cert-tdi-full-cave-diver", "cert-nsscds-full-cave-diver"],
+      "limits": ["Complex navigation", "Multiple stages", "DPV use per standards"],
       "notes": "GUE's highest cave certification with advanced techniques.",
       "links": ["https://www.gue.com/training/cave/cave-2"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -2293,9 +1925,7 @@
         "general": ["Appropriate recreational prerequisites", "Nitrox training"]
       },
       "equivalent_to": ["cert-tdi-advanced-nitrox", "cert-padi-tec-40"],
-      "limits": [
-        "High-O2 mixes for accelerated decompression when paired with deco training"
-      ],
+      "limits": ["High-O2 mixes for accelerated decompression when paired with deco training"],
       "notes": "IANTD pioneered nitrox training; pathways vary by region.",
       "links": ["https://www.iantd.com/pages/courses.php"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -2348,10 +1978,7 @@
         "certifications": [],
         "general": ["Open Water Diver or equivalent"]
       },
-      "equivalent_to": [
-        "cert-padi-enriched-air-diver",
-        "cert-tdi-nitrox-diver"
-      ],
+      "equivalent_to": ["cert-padi-enriched-air-diver", "cert-tdi-nitrox-diver"],
       "limits": ["Nitrox up to 40% O2"],
       "notes": "IANTD pioneered nitrox training.",
       "links": ["https://www.iantd.com/pages/courses.php"],
@@ -2369,10 +1996,7 @@
         "certifications": ["cert-iantd-normoxic-trimix-diver"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-tdi-advanced-trimix-diver",
-        "cert-padi-tec-trimix-diver"
-      ],
+      "equivalent_to": ["cert-tdi-advanced-trimix-diver", "cert-padi-tec-trimix-diver"],
       "limits": ["Hypoxic trimix for very deep dives"],
       "notes": "IANTD's highest open circuit trimix level.",
       "links": ["https://www.iantd.com/pages/courses.php"],
@@ -2407,10 +2031,7 @@
         "certifications": ["cert-iantd-cavern-diver"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-tdi-intro-to-cave-diver",
-        "cert-nsscds-intro-to-cave-diver"
-      ],
+      "equivalent_to": ["cert-tdi-intro-to-cave-diver", "cert-nsscds-intro-to-cave-diver"],
       "limits": ["Limited penetration"],
       "notes": "IANTD intro to cave.",
       "links": ["https://www.iantd.com/pages/courses.php"],
@@ -2428,10 +2049,7 @@
         "certifications": ["cert-iantd-intro-cave-diver"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-tdi-full-cave-diver",
-        "cert-nsscds-full-cave-diver"
-      ],
+      "equivalent_to": ["cert-tdi-full-cave-diver", "cert-nsscds-full-cave-diver"],
       "limits": ["Complex navigation permitted"],
       "notes": "IANTD full cave certification.",
       "links": ["https://www.iantd.com/pages/courses.php"],
@@ -2449,10 +2067,7 @@
         "certifications": [],
         "general": ["CCR certification", "Advanced mixed gas experience"]
       },
-      "equivalent_to": [
-        "cert-padi-tec-100-ccr",
-        "cert-tdi-ccr-advanced-mixed-gas-diver"
-      ],
+      "equivalent_to": ["cert-padi-tec-100-ccr", "cert-tdi-ccr-advanced-mixed-gas-diver"],
       "limits": ["Advanced CCR with trimix"],
       "notes": "IANTD advanced CCR level.",
       "links": ["https://www.iantd.com/pages/courses.php"],
@@ -2488,11 +2103,7 @@
         "certifications": [],
         "general": ["Basic swimming ability", "Medical clearance as required"]
       },
-      "equivalent_to": [
-        "cert-padi-owd",
-        "cert-ssi-open-water-diver",
-        "cert-sdi-open-water-scuba-diver"
-      ],
+      "equivalent_to": ["cert-padi-owd", "cert-ssi-open-water-diver", "cert-sdi-open-water-scuba-diver"],
       "limits": ["Training to 20 m (66 ft)", "No decompression dives"],
       "notes": "RAID entry-level autonomous diver certification.",
       "links": ["https://diveraid.com/courses/ow20/"],
@@ -2510,10 +2121,7 @@
         "general": []
       },
       "equivalent_to": ["cert-padi-aowd", "cert-ssi-advanced-adventurer"],
-      "limits": [
-        "Recommended to 30 m (100 ft) with deep module",
-        "No decompression dives"
-      ],
+      "limits": ["Recommended to 30 m (100 ft) with deep module", "No decompression dives"],
       "notes": "Post-OW structured experience with adventure dives.",
       "links": ["https://diveraid.com/courses/explorer-30/"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -2528,20 +2136,10 @@
       "historical_names": [],
       "prerequisites": {
         "certifications": [],
-        "general": [
-          "Intermediate/advanced recreational training",
-          "Nitrox and deep training per standards"
-        ]
+        "general": ["Intermediate/advanced recreational training", "Nitrox and deep training per standards"]
       },
-      "equivalent_to": [
-        "cert-tdi-advanced-nitrox",
-        "cert-tdi-decompression-procedures",
-        "cert-padi-tec-40"
-      ],
-      "limits": [
-        "Limited decompression per course standards",
-        "One decompression gas"
-      ],
+      "equivalent_to": ["cert-tdi-advanced-nitrox", "cert-tdi-decompression-procedures", "cert-padi-tec-40"],
+      "limits": ["Limited decompression per course standards", "One decompression gas"],
       "notes": "Bridge from recreational to technical in RAID pathway.",
       "links": ["https://diveraid.com/courses/deco-40/"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -2558,11 +2156,7 @@
         "certifications": [],
         "general": ["Open Water Diver or equivalent"]
       },
-      "equivalent_to": [
-        "cert-padi-enriched-air-diver",
-        "cert-ssi-enriched-air-nitrox-40",
-        "cert-sdi-computer-nitrox"
-      ],
+      "equivalent_to": ["cert-padi-enriched-air-diver", "cert-ssi-enriched-air-nitrox-40", "cert-sdi-computer-nitrox"],
       "limits": ["Nitrox up to 40% O2"],
       "notes": "Basic nitrox certification.",
       "links": ["https://diveraid.com/courses/nitrox/"],
@@ -2577,19 +2171,10 @@
       "historical_names": [],
       "prerequisites": {
         "certifications": [],
-        "general": [
-          "Open Water Diver or equivalent",
-          "Unit-specific prerequisites"
-        ]
+        "general": ["Open Water Diver or equivalent", "Unit-specific prerequisites"]
       },
-      "equivalent_to": [
-        "cert-padi-tec-40-ccr",
-        "cert-tdi-ccr-air-diluent-diver"
-      ],
-      "limits": [
-        "CCR with air or nitrox diluent",
-        "Unit-specific configuration"
-      ],
+      "equivalent_to": ["cert-padi-tec-40-ccr", "cert-tdi-ccr-air-diluent-diver"],
+      "limits": ["CCR with air or nitrox diluent", "Unit-specific configuration"],
       "notes": "Entry-level CCR certification - RAID's specialty.",
       "links": ["https://diveraid.com/courses/ccr-40/"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -2622,10 +2207,7 @@
         "certifications": ["cert-raid-ccr-60"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-padi-tec-100-ccr",
-        "cert-tdi-ccr-advanced-mixed-gas-diver"
-      ],
+      "equivalent_to": ["cert-padi-tec-100-ccr", "cert-tdi-ccr-advanced-mixed-gas-diver"],
       "limits": ["Advanced trimix CCR diving", "Complex decompression"],
       "notes": "Advanced CCR level.",
       "links": ["https://diveraid.com/courses/ccr-100/"],
@@ -2643,10 +2225,7 @@
         "general": []
       },
       "equivalent_to": [],
-      "limits": [
-        "Very deep CCR diving with hypoxic trimix",
-        "Extensive decompression"
-      ],
+      "limits": ["Very deep CCR diving with hypoxic trimix", "Extensive decompression"],
       "notes": "Highest CCR level in RAID system.",
       "links": ["https://diveraid.com/courses/ccr-120/"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -2679,10 +2258,7 @@
         "certifications": ["cert-raid-trimix-1"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-tdi-advanced-trimix-diver",
-        "cert-padi-tec-trimix-diver"
-      ],
+      "equivalent_to": ["cert-tdi-advanced-trimix-diver", "cert-padi-tec-trimix-diver"],
       "limits": ["Hypoxic trimix for very deep dives"],
       "notes": "Advanced trimix level in RAID.",
       "links": ["https://diveraid.com/courses/trimix-2/"],
@@ -2716,10 +2292,7 @@
         "certifications": ["cert-raid-cavern-diver"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-tdi-intro-to-cave-diver",
-        "cert-nsscds-intro-to-cave-diver"
-      ],
+      "equivalent_to": ["cert-tdi-intro-to-cave-diver", "cert-nsscds-intro-to-cave-diver"],
       "limits": ["Limited penetration"],
       "notes": "RAID intro to cave.",
       "links": ["https://diveraid.com/courses/intro-to-cave/"],
@@ -2736,10 +2309,7 @@
         "certifications": ["cert-raid-intro-to-cave-diver"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-tdi-full-cave-diver",
-        "cert-nsscds-full-cave-diver"
-      ],
+      "equivalent_to": ["cert-tdi-full-cave-diver", "cert-nsscds-full-cave-diver"],
       "limits": ["Complex navigation permitted"],
       "notes": "Full cave certification in RAID system.",
       "links": ["https://diveraid.com/courses/cave-2/"],
@@ -2775,15 +2345,8 @@
         "certifications": [],
         "general": ["Basic swimming ability", "Medical clearance as required"]
       },
-      "equivalent_to": [
-        "cert-padi-owd",
-        "cert-ssi-open-water-diver",
-        "cert-sdi-open-water-scuba-diver"
-      ],
-      "limits": [
-        "Recommended max depth 18 m (60 ft)",
-        "No decompression dives"
-      ],
+      "equivalent_to": ["cert-padi-owd", "cert-ssi-open-water-diver", "cert-sdi-open-water-scuba-diver"],
+      "limits": ["Recommended max depth 18 m (60 ft)", "No decompression dives"],
       "notes": "NAUI entry-level autonomous diver certification.",
       "links": ["https://www.naui.org/certifications/"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -2799,15 +2362,8 @@
         "certifications": ["cert-naui-scuba-diver"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-padi-aowd",
-        "cert-ssi-advanced-adventurer",
-        "cert-sdi-advanced-adventure-diver"
-      ],
-      "limits": [
-        "Recommended training to 30 m (100 ft)",
-        "No decompression dives"
-      ],
+      "equivalent_to": ["cert-padi-aowd", "cert-ssi-advanced-adventurer", "cert-sdi-advanced-adventure-diver"],
+      "limits": ["Recommended training to 30 m (100 ft)", "No decompression dives"],
       "notes": "NAUI's advanced recreational step.",
       "links": ["https://www.naui.org/certifications/"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -2824,11 +2380,7 @@
         "certifications": ["cert-naui-advanced-scuba-diver"],
         "general": ["Current first aid/CPR"]
       },
-      "equivalent_to": [
-        "cert-padi-rescue-diver",
-        "cert-ssi-diver-stress-and-rescue",
-        "cert-sdi-rescue-diver"
-      ],
+      "equivalent_to": ["cert-padi-rescue-diver", "cert-ssi-diver-stress-and-rescue", "cert-sdi-rescue-diver"],
       "limits": ["Not a depth rating"],
       "notes": "Required for leadership path.",
       "links": ["https://www.naui.org/certifications/"],
@@ -2845,16 +2397,9 @@
       "historical_names": [],
       "prerequisites": {
         "certifications": ["cert-naui-rescue-diver"],
-        "general": [
-          "Four NAUI specialty certifications",
-          "Minimum 50 logged dives"
-        ]
+        "general": ["Four NAUI specialty certifications", "Minimum 50 logged dives"]
       },
-      "equivalent_to": [
-        "cert-padi-master-scuba-diver",
-        "cert-ssi-master-diver",
-        "cert-sdi-master-scuba-diver"
-      ],
+      "equivalent_to": ["cert-padi-master-scuba-diver", "cert-ssi-master-diver", "cert-sdi-master-scuba-diver"],
       "limits": ["Recognition rating"],
       "notes": "NAUI's highest non-professional recognition rating.",
       "links": ["https://www.naui.org/certifications/"],
@@ -2870,17 +2415,9 @@
       "historical_names": [],
       "prerequisites": {
         "certifications": ["cert-naui-rescue-diver"],
-        "general": [
-          "Minimum age 18 years",
-          "Minimum 50 logged dives",
-          "Current CPR/First Aid"
-        ]
+        "general": ["Minimum age 18 years", "Minimum 50 logged dives", "Current CPR/First Aid"]
       },
-      "equivalent_to": [
-        "cert-padi-divemaster",
-        "cert-ssi-dive-guide",
-        "cert-sdi-divemaster"
-      ],
+      "equivalent_to": ["cert-padi-divemaster", "cert-ssi-dive-guide", "cert-sdi-divemaster"],
       "limits": ["May supervise certified divers", "May assist with training"],
       "notes": "NAUI professional-level certification.",
       "links": ["https://www.naui.org/certifications/"],
@@ -2897,11 +2434,7 @@
         "certifications": [],
         "general": ["Open Water Diver or equivalent"]
       },
-      "equivalent_to": [
-        "cert-padi-enriched-air-diver",
-        "cert-ssi-enriched-air-nitrox-40",
-        "cert-sdi-computer-nitrox"
-      ],
+      "equivalent_to": ["cert-padi-enriched-air-diver", "cert-ssi-enriched-air-nitrox-40", "cert-sdi-computer-nitrox"],
       "limits": ["Nitrox up to 40% O2"],
       "notes": "Basic nitrox certification.",
       "links": ["https://www.naui.org/certifications/"],
@@ -2952,10 +2485,7 @@
         "certifications": [],
         "general": ["Open Water Diver or equivalent"]
       },
-      "equivalent_to": [
-        "cert-padi-night-diver",
-        "cert-ssi-night-limited-visibility"
-      ],
+      "equivalent_to": ["cert-padi-night-diver", "cert-ssi-night-limited-visibility"],
       "limits": [],
       "notes": "Night diving techniques.",
       "links": ["https://www.naui.org/certifications/"],
@@ -2972,10 +2502,7 @@
         "certifications": [],
         "general": ["Open Water Diver or equivalent"]
       },
-      "equivalent_to": [
-        "cert-padi-underwater-navigator",
-        "cert-ssi-navigation"
-      ],
+      "equivalent_to": ["cert-padi-underwater-navigator", "cert-ssi-navigation"],
       "limits": [],
       "notes": "Underwater navigation techniques.",
       "links": ["https://www.naui.org/certifications/"],
@@ -2991,16 +2518,9 @@
       "historical_names": [],
       "prerequisites": {
         "certifications": [],
-        "general": [
-          "Advanced-level recreational certification",
-          "Buoyancy and guideline skills training per standards"
-        ]
+        "general": ["Advanced-level recreational certification", "Buoyancy and guideline skills training per standards"]
       },
-      "equivalent_to": [
-        "cert-tdi-cavern-diver",
-        "cert-iantd-cavern-diver",
-        "cert-raid-cavern-diver"
-      ],
+      "equivalent_to": ["cert-tdi-cavern-diver", "cert-iantd-cavern-diver", "cert-raid-cavern-diver"],
       "limits": [
         "Cavern zone only: daylight zone, within linear/penetration limits per standards",
         "No decompression unless otherwise qualified",
@@ -3022,15 +2542,8 @@
         "certifications": ["cert-nsscds-cavern-diver"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-tdi-intro-to-cave-diver",
-        "cert-iantd-intro-cave-diver",
-        "cert-raid-intro-to-cave-diver"
-      ],
-      "limits": [
-        "Limited penetration distance and simple navigation",
-        "No complex circuits/siphons unless trained"
-      ],
+      "equivalent_to": ["cert-tdi-intro-to-cave-diver", "cert-iantd-intro-cave-diver", "cert-raid-intro-to-cave-diver"],
+      "limits": ["Limited penetration distance and simple navigation", "No complex circuits/siphons unless trained"],
       "notes": "Bridges cavern to full cave with conservative limits.",
       "links": ["https://nsscds.org/training/"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -3047,11 +2560,7 @@
         "certifications": ["cert-nsscds-intro-to-cave-diver"],
         "general": []
       },
-      "equivalent_to": [
-        "cert-tdi-full-cave-diver",
-        "cert-iantd-cave-diver",
-        "cert-raid-cave-2"
-      ],
+      "equivalent_to": ["cert-tdi-full-cave-diver", "cert-iantd-cave-diver", "cert-raid-cave-2"],
       "limits": [
         "Complex navigation permitted within training",
         "Stages and decompression only if separately qualified"
@@ -3072,15 +2581,68 @@
       "prerequisites": {
         "certifications": [],
         "general": [
-          "Advanced-level recreational certification",
-          "Cavern-level training per CDAA standards"
+          "Advanced Open Water recreational certification or equivalent",
+          "Minimum 50 dives post Open Water",
+          "Minimum 25 hours bottom time",
+          "At least 2 night dives and 5 dives deeper than 20 m",
+          "Minimum age 18 years",
+          "Successfully complete a diving medical statement"
         ]
       },
       "equivalent_to": ["cert-nsscds-cavern-diver"],
-      "limits": ["Australian CDAA site categories apply (sinkholes/caverns)"],
-      "notes": "CDAA scheme differs by site category; check current CDAA standards.",
-      "links": ["https://www.cavedivers.com.au/training/"],
-      "updated_at": "2025-10-31T12:00:00Z"
+      "limits": [
+        "Cavern sites: Maximum depth 20 m, daylight always visible, maximum linear penetration 40 m",
+        "Sinkhole sites: Large passages (no restrictions too small for two divers adjacent), maximum linear penetration 40 m into overhead areas",
+        "Recommended maximum depth 40 m on air"
+      ],
+      "notes": "Entry-level cave certification covering cavern and sinkhole sites; includes first year CDAA membership. Equivalent of 5 full days of theory and diving. Australian CDAA site categories apply.",
+      "links": ["https://www.cavedivers.com.au/basic-cave"],
+      "updated_at": "2025-11-03T12:00:00Z"
+    },
+    {
+      "id": "cert-cdaa-cave-diver",
+      "agency": "agency-cdaa",
+      "name": "Cave Diver",
+      "abbr": "Cave Diver",
+      "category": "cave",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-cdaa-basic-cave"],
+        "general": ["Minimum 20 basic cave dives in at least 2 different sites", "Minimum 10 hours total bottom time"]
+      },
+      "equivalent_to": ["cert-tdi-intro-to-cave-diver", "cert-nsscds-intro-to-cave-diver"],
+      "limits": [
+        "Enclosed cave environment with overhangs, silt, and darkness zones",
+        "Passages large enough for two divers to swim adjacent and turn around together",
+        "Maximum penetration 1/3 of twin cylinder gas supply",
+        "No complex staged decompression unless separately qualified"
+      ],
+      "notes": "Develops practical skills and knowledge to safely undertake diving activities in cave sites. Cave sites differ from cavern/sinkhole sites by having darker environments and more complex conditions.",
+      "links": ["https://www.cavedivers.com.au/cave"],
+      "updated_at": "2025-11-03T12:00:00Z"
+    },
+    {
+      "id": "cert-cdaa-advanced-cave-diver",
+      "agency": "agency-cdaa",
+      "name": "Advanced Cave Diver",
+      "abbr": "Advanced Cave",
+      "category": "cave",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": ["cert-cdaa-cave-diver"],
+        "general": []
+      },
+      "equivalent_to": ["cert-tdi-full-cave-diver", "cert-nsscds-full-cave-diver"],
+      "limits": [
+        "Complex interlinked passages",
+        "Advanced cave sites with staged decompression requirements",
+        "Requires appropriate decompression training for staged dives"
+      ],
+      "notes": "Develops minimum skills and knowledge for advanced (staged) cave diving including planning, organization, procedures, techniques, self-reliance and problem solving. Ongoing education and experience expected.",
+      "links": ["https://www.cavedivers.com.au/advanced-cave"],
+      "updated_at": "2025-11-03T12:00:00Z"
     },
 
     {
@@ -3348,19 +2910,10 @@
       "historical_names": [],
       "prerequisites": {
         "certifications": [],
-        "general": [
-          "Advanced recreational training",
-          "Nitrox and deco competencies per standards"
-        ]
+        "general": ["Advanced recreational training", "Nitrox and deco competencies per standards"]
       },
-      "equivalent_to": [
-        "cert-tdi-extended-range",
-        "cert-padi-tec-50",
-        "cert-raid-deco-40"
-      ],
-      "limits": [
-        "Deeper dives with staged decompression within ProTec standards"
-      ],
+      "equivalent_to": ["cert-tdi-extended-range", "cert-padi-tec-50", "cert-raid-deco-40"],
+      "limits": ["Deeper dives with staged decompression within ProTec standards"],
       "notes": "ProTec XR program for staged decompression diving.",
       "links": ["https://protec-diving.com/en/training/"],
       "updated_at": "2025-10-31T12:00:00Z"
@@ -3376,10 +2929,7 @@
       "historical_names": [],
       "prerequisites": {
         "certifications": [],
-        "general": [
-          "Advanced recreational certification",
-          "Solid buoyancy/trim"
-        ]
+        "general": ["Advanced recreational certification", "Solid buoyancy/trim"]
       },
       "equivalent_to": ["cert-gue-fundamentals"],
       "limits": ["Not a depth rating; skills-based for technical path"],
@@ -3400,10 +2950,7 @@
         "certifications": [],
         "general": ["Nitrox and deep experience per standards"]
       },
-      "equivalent_to": [
-        "cert-tdi-advanced-nitrox",
-        "cert-iantd-advanced-nitrox-diver"
-      ],
+      "equivalent_to": ["cert-tdi-advanced-nitrox", "cert-iantd-advanced-nitrox-diver"],
       "limits": ["High-O2 mixes for deco when paired with deco training"],
       "notes": "European technical curriculum (OC/CCR).",
       "links": ["https://swedtechdiving.se/courses/"],
@@ -3475,10 +3022,7 @@
         "certifications": [],
         "general": []
       },
-      "equivalent_to": [
-        "cert-padi-emergency-oxygen-provider",
-        "cert-ssi-oxygen-provider"
-      ],
+      "equivalent_to": ["cert-padi-emergency-oxygen-provider", "cert-ssi-oxygen-provider"],
       "limits": [],
       "notes": "Emergency oxygen administration for diving injuries.",
       "links": ["https://dan.org/training/"],
@@ -3537,6 +3081,24 @@
       "links": ["https://dan.org/training/"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
+    {
+      "id": "cert-firstresponse-ed-oxygen-administration",
+      "agency": "agency-firstresponse-ed",
+      "name": "O2 Administration",
+      "abbr": "O2",
+      "category": "other",
+      "status": "active",
+      "historical_names": [],
+      "prerequisites": {
+        "certifications": [],
+        "general": []
+      },
+      "equivalent_to": ["cert-dan-oxygen-provider", "cert-padi-emergency-oxygen-provider", "cert-ssi-oxygen-provider"],
+      "limits": [],
+      "notes": "Emergency oxygen administration for diving injuries; not a diving certification. OSHA & ILCoR compliant.",
+      "links": ["https://www.firstresponse-ed.com/"],
+      "updated_at": "2025-11-03T12:00:00Z"
+    },
 
     {
       "id": "cert-erdi-public-safety-diver",
@@ -3548,17 +3110,12 @@
       "historical_names": [],
       "prerequisites": {
         "certifications": [],
-        "general": [
-          "Open Water Diver or equivalent",
-          "Law enforcement or emergency services personnel"
-        ]
+        "general": ["Open Water Diver or equivalent", "Law enforcement or emergency services personnel"]
       },
       "equivalent_to": [],
       "limits": [],
       "notes": "Public safety diving for law enforcement and emergency response.",
-      "links": [
-        "https://www.tdisdi.com/erdi/get-certified/public-safety-diver/"
-      ],
+      "links": ["https://www.tdisdi.com/erdi/get-certified/public-safety-diver/"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -3576,9 +3133,7 @@
       "equivalent_to": [],
       "limits": [],
       "notes": "Underwater crime scene investigation and evidence recovery.",
-      "links": [
-        "https://www.tdisdi.com/erdi/get-certified/underwater-crime-scene-investigator/"
-      ],
+      "links": ["https://www.tdisdi.com/erdi/get-certified/underwater-crime-scene-investigator/"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -3595,9 +3150,7 @@
       "equivalent_to": [],
       "limits": [],
       "notes": "Public safety search and recovery operations.",
-      "links": [
-        "https://www.tdisdi.com/erdi/get-certified/search-and-recovery/"
-      ],
+      "links": ["https://www.tdisdi.com/erdi/get-certified/search-and-recovery/"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -3614,9 +3167,7 @@
       "equivalent_to": [],
       "limits": [],
       "notes": "Diving in confined spaces for public safety.",
-      "links": [
-        "https://www.tdisdi.com/erdi/get-certified/confined-space-diver/"
-      ],
+      "links": ["https://www.tdisdi.com/erdi/get-certified/confined-space-diver/"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
     {
@@ -3630,15 +3181,10 @@
         "certifications": [],
         "general": []
       },
-      "equivalent_to": [
-        "cert-dan-oxygen-provider",
-        "cert-padi-emergency-oxygen-provider"
-      ],
+      "equivalent_to": ["cert-dan-oxygen-provider", "cert-padi-emergency-oxygen-provider"],
       "limits": [],
       "notes": "Emergency oxygen provider training.",
-      "links": [
-        "https://www.divessi.com/en/certifications/other/react-right-oxygen-provider"
-      ],
+      "links": ["https://www.divessi.com/en/certifications/other/react-right-oxygen-provider"],
       "updated_at": "2025-10-31T12:00:00Z"
     },
 
@@ -3709,9 +3255,7 @@
         "general": ["Minimum age 12 years", "Medical certificate"]
       },
       "equivalent_to": ["cert-cmas-one-star-diver", "cert-padi-owd"],
-      "limits": [
-        "Supervised to 20 m or autonomous to 12 m with appropriate certification"
-      ],
+      "limits": ["Supervised to 20 m or autonomous to 12 m with appropriate certification"],
       "notes": "French entry-level CMAS certification.",
       "links": ["https://ffessm.fr/pratiquer/formations"],
       "updated_at": "2025-10-31T12:00:00Z"
