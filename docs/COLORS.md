@@ -4,7 +4,7 @@ This site uses the official Skuba brand colors for a consistent experience acros
 
 ## Primary Colors
 
-- **Background**: `#f8f9fa` - Light gray background
+- **Background**: `#f3f4f6` - Light gray background
 - **Accent (Primary Blue)**: `#0b95da` - Skuba blue (links, buttons, headings)
 - **Accent Dark**: `#075985` - Darker blue for hover states
 
@@ -20,20 +20,20 @@ This site uses the official Skuba brand colors for a consistent experience acros
 
 ### Homepage (index.html)
 
-- Background: `#f8f9fa`
+- Background: `#f3f4f6`
 - Content card: `#ffffff` with subtle shadow
 - Links: `#0b95da` → `#075985` on hover
 - Blockquotes: `#0b95da` left border
-- Code blocks: `#f8f9fa` background with `#e5e7eb` border
+- Code blocks: `#f3f4f6` background with `#e5e7eb` border
 
 ### 404 Page (404.html)
 
-- Background: `#f8f9fa`
+- Background: `#f3f4f6`
 - Container: `#ffffff` card with shadow
 - 404 text: `#0b95da`
 - Primary button: `#0b95da` background
 - Secondary button: `#ffffff` with `#e5e7eb` border
-- Suggestions box: `#f8f9fa` with `#e5e7eb` border
+- Suggestions box: `#f3f4f6` with `#e5e7eb` border
 
 ### Loading Spinner
 

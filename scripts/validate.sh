@@ -136,6 +136,156 @@ check_duplicate_ids() {
     echo ""
 }
 
+# Function to check for unique agency names and abbreviations
+check_unique_agency_names_and_abbrs() {
+    local json_file="$1"
+    
+    # Only check agencies files
+    if [[ "$json_file" != *"agencies"*.json ]]; then
+        return 0
+    fi
+    
+    echo -e "${YELLOW}🔎 Checking for unique agency names and abbreviations in: ${json_file}${NC}"
+    
+    local has_duplicates=0
+    
+    # Check for duplicate names
+    local duplicate_names
+    duplicate_names=$(jq -r '.agencies[]? | .name? // empty' "$json_file" 2>/dev/null | sort | uniq -d || echo "")
+    
+    if [ -n "$duplicate_names" ] && [ "$duplicate_names" != "" ]; then
+        echo -e "${RED}❌ ERROR: Duplicate agency names found:${NC}"
+        echo "$duplicate_names" | while read -r dup_name; do
+            if [ -n "$dup_name" ]; then
+                echo -e "${RED}   - ${dup_name}${NC}"
+                # Show which agencies have this name
+                local agencies_with_name
+                agencies_with_name=$(jq -r ".agencies[]? | select(.name == \"$dup_name\") | .id" "$json_file" 2>/dev/null || echo "")
+                echo "$agencies_with_name" | while read -r agency_id; do
+                    if [ -n "$agency_id" ]; then
+                        echo -e "${RED}     Used by: ${agency_id}${NC}"
+                    fi
+                done
+            fi
+        done
+        has_duplicates=1
+        VALIDATION_FAILED=1
+    fi
+    
+    # Check for duplicate abbreviations
+    local duplicate_abbrs
+    duplicate_abbrs=$(jq -r '.agencies[]? | .abbr? // empty' "$json_file" 2>/dev/null | sort | uniq -d || echo "")
+    
+    if [ -n "$duplicate_abbrs" ] && [ "$duplicate_abbrs" != "" ]; then
+        echo -e "${RED}❌ ERROR: Duplicate agency abbreviations found:${NC}"
+        echo "$duplicate_abbrs" | while read -r dup_abbr; do
+            if [ -n "$dup_abbr" ]; then
+                echo -e "${RED}   - ${dup_abbr}${NC}"
+                # Show which agencies have this abbreviation
+                local agencies_with_abbr
+                agencies_with_abbr=$(jq -r ".agencies[]? | select(.abbr == \"$dup_abbr\") | .id" "$json_file" 2>/dev/null || echo "")
+                echo "$agencies_with_abbr" | while read -r agency_id; do
+                    if [ -n "$agency_id" ]; then
+                        echo -e "${RED}     Used by: ${agency_id}${NC}"
+                    fi
+                done
+            fi
+        done
+        has_duplicates=1
+        VALIDATION_FAILED=1
+    fi
+    
+    if [ $has_duplicates -eq 0 ]; then
+        echo -e "${GREEN}✅ All agency names and abbreviations are unique${NC}"
+    fi
+    
+    echo ""
+}
+
+# Function to check for unique certification names and abbreviations per agency
+check_unique_cert_names_and_abbrs_per_agency() {
+    local json_file="$1"
+    
+    # Only check certifications files
+    if [[ "$json_file" != *"certifications"*.json ]]; then
+        return 0
+    fi
+    
+    echo -e "${YELLOW}🔎 Checking for unique certification names and abbreviations per agency in: ${json_file}${NC}"
+    
+    local has_duplicates=0
+    
+    # Check for duplicate names per agency
+    # Create a temporary file to store agency-name pairs
+    local temp_name_pairs=$(mktemp)
+    
+    # Extract agency-name pairs
+    jq -r '.certifications[]? | "\(.agency // "unknown")|\(.name // "")"' "$json_file" 2>/dev/null > "$temp_name_pairs"
+    
+    # Find duplicate agency-name pairs
+    local duplicate_name_pairs
+    duplicate_name_pairs=$(sort "$temp_name_pairs" | uniq -d)
+    
+    if [ -n "$duplicate_name_pairs" ] && [ "$duplicate_name_pairs" != "" ]; then
+        echo -e "${RED}❌ ERROR: Duplicate certification names found within the same agency:${NC}"
+        echo "$duplicate_name_pairs" | while IFS='|' read -r agency name; do
+            if [ -n "$agency" ] && [ -n "$name" ]; then
+                echo -e "${RED}   - Agency: ${agency}, Certification name: ${name}${NC}"
+                # Show which certification IDs have this duplicate
+                local cert_ids
+                cert_ids=$(jq -r ".certifications[]? | select(.agency == \"$agency\" and .name == \"$name\") | .id" "$json_file" 2>/dev/null || echo "")
+                echo "$cert_ids" | while read -r cert_id; do
+                    if [ -n "$cert_id" ]; then
+                        echo -e "${RED}     Certificate ID: ${cert_id}${NC}"
+                    fi
+                done
+            fi
+        done
+        has_duplicates=1
+        VALIDATION_FAILED=1
+    fi
+    
+    rm -f "$temp_name_pairs"
+    
+    # Check for duplicate abbreviations per agency
+    # Create a temporary file to store agency-abbr pairs
+    local temp_abbr_pairs=$(mktemp)
+    
+    # Extract agency-abbr pairs (excluding null/empty abbreviations)
+    jq -r '.certifications[]? | select(.abbr != null and .abbr != "") | "\(.agency // "unknown")|\(.abbr)"' "$json_file" 2>/dev/null > "$temp_abbr_pairs"
+    
+    # Find duplicate agency-abbr pairs
+    local duplicate_abbr_pairs
+    duplicate_abbr_pairs=$(sort "$temp_abbr_pairs" | uniq -d)
+    
+    if [ -n "$duplicate_abbr_pairs" ] && [ "$duplicate_abbr_pairs" != "" ]; then
+        echo -e "${RED}❌ ERROR: Duplicate certification abbreviations found within the same agency:${NC}"
+        echo "$duplicate_abbr_pairs" | while IFS='|' read -r agency abbr; do
+            if [ -n "$agency" ] && [ -n "$abbr" ]; then
+                echo -e "${RED}   - Agency: ${agency}, Certification abbreviation: ${abbr}${NC}"
+                # Show which certification IDs have this duplicate
+                local cert_ids
+                cert_ids=$(jq -r ".certifications[]? | select(.agency == \"$agency\" and .abbr == \"$abbr\") | .id" "$json_file" 2>/dev/null || echo "")
+                echo "$cert_ids" | while read -r cert_id; do
+                    if [ -n "$cert_id" ]; then
+                        echo -e "${RED}     Certificate ID: ${cert_id}${NC}"
+                    fi
+                done
+            fi
+        done
+        has_duplicates=1
+        VALIDATION_FAILED=1
+    fi
+    
+    rm -f "$temp_abbr_pairs"
+    
+    if [ $has_duplicates -eq 0 ]; then
+        echo -e "${GREEN}✅ All certification names and abbreviations are unique within each agency${NC}"
+    fi
+    
+    echo ""
+}
+
 # Function to validate schema files themselves
 validate_schema_file() {
     local schema_file="$1"
@@ -342,6 +492,8 @@ main() {
             if [ -n "$json_file" ] && [ -f "$json_file" ]; then
                 validate_json_schema "$json_file"
                 check_duplicate_ids "$json_file"
+                check_unique_agency_names_and_abbrs "$json_file"
+                check_unique_cert_names_and_abbrs_per_agency "$json_file"
                 check_agency_logos "$json_file"
             fi
         done <<< "$json_files"

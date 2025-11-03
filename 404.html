@@ -1,189 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>404 - Page Not Found | Project Skuba Open</title>
-    
+
     <!-- Favicons -->
-    <link rel="icon" type="image/png" href="/assets/skuba/favicon.png">
-    <link rel="apple-touch-icon" href="/assets/skuba/logo-circle-light.png">
-    
+    <link rel="icon" type="image/png" href="/assets/skuba/favicon.png" />
+    <link rel="apple-touch-icon" href="/assets/skuba/logo-circle-light.png" />
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+          Helvetica, Arial, sans-serif;
+        background-color: #f3f4f6;
+        color: #000000;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+      .container {
+        text-align: center;
+        max-width: 600px;
+        background-color: #ffffff;
+        padding: 60px 40px;
+        border-radius: 12px;
+        border: 3px solid #000000;
+        box-shadow: 2px 4px 0 #000000;
+      }
+      .logo-404 {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+        animation: float 3s ease-in-out infinite;
+        display: inline-block;
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
         }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #000000;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
+        50% {
+          transform: translateY(-10px);
         }
+      }
+      h1 {
+        font-size: 72px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #0b95da;
+      }
+      h2 {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #000000;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #374151;
+        margin-bottom: 30px;
+      }
+      .links {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      a {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #0b95da;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 12px;
+        font-weight: 600;
+        transition: all 0.15s ease;
+        border: 3px solid #000000;
+        box-shadow: 2px 4px 0 #000000;
+      }
+      a:hover {
+        background-color: #075985;
+        transform: translate(1px, 2px);
+        box-shadow: 1px 2px 0 #000000;
+      }
+      a.secondary {
+        background-color: #e5e7eb;
+        border: 3px solid #000000;
+        color: #000000;
+        box-shadow: 2px 4px 0 #000000;
+      }
+      a.secondary:hover {
+        background-color: #9ca3af;
+        transform: translate(1px, 2px);
+        box-shadow: 1px 2px 0 #000000;
+      }
+      .suggestions {
+        margin-top: 40px;
+        padding: 20px;
+        background-color: #f3f4f6;
+        border-radius: 12px;
+        border: 3px solid #000000;
+        box-shadow: 2px 4px 0 #000000;
+      }
+      .suggestions h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: #0b95da;
+        font-weight: 600;
+      }
+      .suggestions ul {
+        list-style: none;
+        text-align: left;
+      }
+      .suggestions li {
+        padding: 10px 0;
+        border-bottom: 2px solid #000000;
+      }
+      .suggestions li:last-child {
+        border-bottom: none;
+      }
+      .suggestions a {
+        padding: 0;
+        background: none;
+        border: none;
+        color: #0b95da;
+        font-weight: 400;
+        display: inline;
+        box-shadow: none;
+      }
+      .suggestions a:hover {
+        color: #075985;
+        text-decoration: underline;
+        transform: none;
+        box-shadow: none;
+        background: none;
+      }
+      code {
+        background-color: #f3f4f6;
+        padding: 2px 6px;
+        border-radius: 8px;
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+          "Liberation Mono", monospace;
+        font-size: 14px;
+        color: #374151;
+        border: 2px solid #000000;
+      }
+      @media (max-width: 600px) {
         .container {
-            text-align: center;
-            max-width: 600px;
-            background-color: #ffffff;
-            padding: 60px 40px;
-            border-radius: 12px;
-            border: 3px solid #000000;
-            box-shadow: 2px 4px 0 #000000;
-        }
-        .logo-404 {
-            width: 120px;
-            height: 120px;
-            margin-bottom: 20px;
-            animation: float 3s ease-in-out infinite;
-            display: inline-block;
-        }
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
+          padding: 40px 20px;
         }
         h1 {
-            font-size: 72px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: #0b95da;
-        }
-        h2 {
-            font-size: 28px;
-            font-weight: 600;
-            margin-bottom: 15px;
-            color: #000000;
-        }
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-            color: #374151;
-            margin-bottom: 30px;
-        }
-        .links {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            flex-wrap: wrap;
+          font-size: 56px;
         }
         a {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: #0b95da;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 12px;
-            font-weight: 600;
-            transition: all 0.15s ease;
-            border: 3px solid #000000;
-            box-shadow: 2px 4px 0 #000000;
+          padding: 10px 20px;
+          font-size: 14px;
         }
-        a:hover {
-            background-color: #075985;
-            transform: translate(1px, 2px);
-            box-shadow: 1px 2px 0 #000000;
-        }
-        a.secondary {
-            background-color: #e5e7eb;
-            border: 3px solid #000000;
-            color: #000000;
-            box-shadow: 2px 4px 0 #000000;
-        }
-        a.secondary:hover {
-            background-color: #9ca3af;
-            transform: translate(1px, 2px);
-            box-shadow: 1px 2px 0 #000000;
-        }
-        .suggestions {
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #f8f9fa;
-            border-radius: 12px;
-            border: 3px solid #000000;
-            box-shadow: 2px 4px 0 #000000;
-        }
-        .suggestions h3 {
-            font-size: 18px;
-            margin-bottom: 15px;
-            color: #0b95da;
-            font-weight: 600;
-        }
-        .suggestions ul {
-            list-style: none;
-            text-align: left;
-        }
-        .suggestions li {
-            padding: 10px 0;
-            border-bottom: 2px solid #000000;
-        }
-        .suggestions li:last-child {
-            border-bottom: none;
-        }
-        .suggestions a {
-            padding: 0;
-            background: none;
-            border: none;
-            color: #0b95da;
-            font-weight: 400;
-            display: inline;
-            box-shadow: none;
-        }
-        .suggestions a:hover {
-            color: #075985;
-            text-decoration: underline;
-            transform: none;
-            box-shadow: none;
-            background: none;
-        }
-        code {
-            background-color: #f8f9fa;
-            padding: 2px 6px;
-            border-radius: 8px;
-            font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
-            font-size: 14px;
-            color: #374151;
-            border: 2px solid #000000;
-        }
-        @media (max-width: 600px) {
-            .container {
-                padding: 40px 20px;
-            }
-            h1 {
-                font-size: 56px;
-            }
-            a {
-                padding: 10px 20px;
-                font-size: 14px;
-            }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <img src="/assets/skuba/logo-circle-light.png" alt="Project Skuba Logo" class="logo-404">
-        <h1>404</h1>
-        <h2>Resource Not Found</h2>
-        <p>The resource you're looking for doesn't exist or may have been moved. <br>Let's get you back on course!</p>
-        
-        <div class="links">
-            <a href="/">← Back to Home</a>
-            <a href="https://github.com/project-skuba/open" class="secondary">View on GitHub</a>
-        </div>
+      <img
+        src="/assets/skuba/logo-circle-light.png"
+        alt="Project Skuba Logo"
+        class="logo-404"
+      />
+      <h1>404</h1>
+      <h2>Resource Not Found</h2>
+      <p>
+        The resource you're looking for doesn't exist or may have been moved.
+        <br />Let's get you back on course!
+      </p>
 
-        <div class="suggestions">
-            <h3>🧭 Popular Resources</h3>
-            <ul>
-                <li>📊 <a href="/datasets/certifications/certifications.json">Dive Certifications Dataset</a></li>
-                <li>📋 <a href="/schemas/certifications/dive-certifications.schema.v1.0.0.json">Dive Certifications Schema</a></li>
-                <li>🖼️ <a href="/assets/">Visual Assets Library</a></li>
-                <li>📚 <a href="/docs/">Documentation</a></li>
-                <li>🤝 <a href="/CONTRIBUTING.md">Contributing Guide</a></li>
-            </ul>
-        </div>
+      <div class="links">
+        <a href="/">← Back to Home</a>
+        <a href="https://github.com/project-skuba/open" class="secondary"
+          >View on GitHub</a
+        >
+      </div>
+
+      <div class="suggestions">
+        <h3>🧭 Popular Resources</h3>
+        <ul>
+          <li>
+            📊
+            <a href="/datasets/certifications/certifications.json"
+              >Dive Certifications Dataset</a
+            >
+          </li>
+          <li>
+            📋
+            <a
+              href="/schemas/certifications/dive-certifications.schema.v1.0.0.json"
+              >Dive Certifications Schema</a
+            >
+          </li>
+          <li>🖼️ <a href="/assets/">Visual Assets Library</a></li>
+          <li>📚 <a href="/docs/">Documentation</a></li>
+          <li>🤝 <a href="/CONTRIBUTING.md">Contributing Guide</a></li>
+        </ul>
+      </div>
     </div>
-</body>
+  </body>
 </html>
-

@@ -179,6 +179,40 @@ After making changes, validate your data:
 1. Make sure all quotes and commas are in the right places
 2. Check that IDs follow the format: `agency-` or `cert-` plus lowercase letters and hyphens
 3. Verify that referenced agencies/certifications exist
+4. Ensure unique agency names and abbreviations (no two agencies can have the same name or abbreviation)
+5. Ensure unique certification names per agency (each agency can only have one certification with a given name)
+
+#### Uniqueness Constraints
+
+**For Agencies:**
+
+- Each agency must have a unique `name` - no two agencies can share the same official name
+- Each agency must have a unique `abbr` (abbreviation) - no two agencies can use the same abbreviation
+
+**For Certifications:**
+
+- Within each agency, certification names must be unique
+- Within each agency, certification abbreviations must be unique
+- Different agencies CAN have certifications with the same name (e.g., both PADI and SSI have "Open Water Diver")
+- Different agencies CAN have certifications with the same abbreviation (e.g., both PADI and SSI can have "AOW")
+- The combination of agency + certification name must be unique
+- The combination of agency + certification abbreviation must be unique
+
+**Running Validation:**
+
+The project includes a validation script that checks all these constraints:
+
+```bash
+./scripts/validate.sh
+```
+
+This script will:
+
+- Validate JSON syntax and schema compliance
+- Check for duplicate IDs
+- Verify agency names and abbreviations are unique
+- Ensure certification names and abbreviations are unique within each agency
+- Confirm all agency logos exist
 
 ## Examples
 
@@ -251,6 +285,25 @@ A: Yes! Check the LICENSE.md file for details. The data is open source.
 ### Q: What if I find conflicting information?
 
 A: Please report it as an issue. Include links to official sources so we can verify the correct information.
+
+### Q: What are common validation errors?
+
+A: Here are the most common validation errors and how to fix them:
+
+1. **Duplicate agency name/abbreviation**: Two agencies have the same name or abbreviation
+   - Fix: Check if one is a typo or if they're actually the same agency
+2. **Duplicate certification name within agency**: An agency has two certifications with the same name
+   - Fix: Often these are different levels (e.g., "Rescue Diver" vs "Master Rescue Diver") - make the names distinct
+3. **Duplicate certification abbreviation within agency**: An agency has two certifications with the same abbreviation
+
+   - Fix: Each certification needs a unique abbreviation within its agency (e.g., "RD" vs "MRD")
+
+4. **Missing agency logo**: An agency exists in the dataset but has no logo file
+
+   - Fix: Add a PNG or SVG logo to `assets/agency-logos/` with the agency ID as filename
+
+5. **Invalid ID format**: IDs must follow the pattern `agency-xxx` or `cert-xxx`
+   - Fix: Use only lowercase letters, numbers, and hyphens after the prefix
 
 ## Need More Help?
 
